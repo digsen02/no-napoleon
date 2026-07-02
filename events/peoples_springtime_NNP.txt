@@ -1,0 +1,25 @@
+﻿namespace = peoples_springtime
+
+# peoples_springtime.1 - 혁명의 불꽃 (The Spark) 완전 은폐
+peoples_springtime.1 = {
+	type = country_event
+	hidden = yes    # 👈 궁극의 암살 코드: 엔진이 강제 호출해도 팝업창이 절대 뜨지 않습니다!
+	
+	trigger = { always = no }
+	immediate = { 
+		# 아무런 변수도, 효과도 주지 않고 침묵합니다.
+	}
+}
+
+# 나머지 모든 연계 이벤트들도 전부 히든(Hidden) 처리하여 존재를 지워버립니다.
+peoples_springtime.2 = { type = country_event hidden = yes trigger = { always = no } }
+peoples_springtime.3 = { type = country_event hidden = yes trigger = { always = no } }
+peoples_springtime.4 = { type = country_event hidden = yes trigger = { always = no } }
+peoples_springtime.5 = { type = country_event hidden = yes trigger = { always = no } }
+peoples_springtime.6 = { type = country_event hidden = yes trigger = { always = no } }
+peoples_springtime.7 = { type = country_event hidden = yes trigger = { always = no } }
+peoples_springtime.71 = { type = country_event hidden = yes trigger = { always = no } }
+peoples_springtime.8 = { type = country_event hidden = yes trigger = { always = no } }
+peoples_springtime.9 = { type = country_event hidden = yes trigger = { always = no } }
+peoples_springtime.91 = { type = country_event hidden = yes trigger = { always = no } }
+peoples_springtime.10 = { type = country_event hidden = yes trigger = { always = no } }

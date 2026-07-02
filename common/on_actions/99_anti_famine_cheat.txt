@@ -1,0 +1,28 @@
+﻿# =======================================================
+# 🛡️ [선생님 고증 픽] 유럽 10개국 대기근 버그 방어 시스템 (1836.01.01 작동)
+# 지정된 국가들에 anti_famine_cheat 모디파이어를 10년(120개월)간 자동 부여
+# =======================================================
+on_game_start = {
+	effect = {
+		# 🇫🇷 프랑스
+		FRA = { add_modifier = { name = anti_famine_cheat months = 120 } }
+		# 🦅 프로이센
+		PRU = { add_modifier = { name = anti_famine_cheat months = 120 } }
+		# 🍺 바이에른
+		BAV = { add_modifier = { name = anti_famine_cheat months = 120 } }
+		# 🦌 뷔르템베르크
+		WUR = { add_modifier = { name = anti_famine_cheat months = 120 } }
+		# 🦁 바덴
+		BAD = { add_modifier = { name = anti_famine_cheat months = 120 } }
+		# 🇨🇭 스위스
+		SWI = { add_modifier = { name = anti_famine_cheat months = 120 } }
+		# 🇭🇺 헝가리
+		HUN = { add_modifier = { name = anti_famine_cheat months = 120 } }
+		# 🇦🇹 오스트리아
+		AUS = { add_modifier = { name = anti_famine_cheat months = 120 } }
+		# 🐎 하노버
+		HAN = { add_modifier = { name = anti_famine_cheat months = 120 } }
+		# 🇸🇪 스웨덴
+		SWE = { add_modifier = { name = anti_famine_cheat months = 120 } }
+	}
+}

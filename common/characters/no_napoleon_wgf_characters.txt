@@ -1,0 +1,24 @@
+﻿CHARACTERS = {
+	c:WGF = {
+		create_character = {
+			first_name = "Leopold"
+			last_name = "von_Sachsen_Coburg"
+			
+			# 벨기에 국왕이지만 원래 독일계 명문가이므로 북독일 문화와 가톨릭을 부여합니다.
+			culture = north_german
+			religion = catholic
+			
+			# 1836년 기준 레오폴 1세는 46세 (1790년 12월생)
+			age = 46
+			
+			# ★ 이 국가의 '최고 통치자(국왕)'로 즉위시킵니다.
+			is_ruler = yes
+			
+			# 국왕의 성향 및 트레이트 (야심가, 매력적인 통치자)
+			traits = { ambitious charismatic_ruler scholar }
+			
+			# 시작 시 지지할 이익집단 (지주 또는 군부 권장)
+			interest_group = ig_landowners
+		}
+	}
+}

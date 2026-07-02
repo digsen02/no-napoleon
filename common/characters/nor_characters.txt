@@ -1,0 +1,19 @@
+﻿CHARACTERS = {
+	# =======================================================
+	# ❄️ 노르웨이 왕국(NOR)의 국왕으로 덴마크의 프레데리크 6세 추대
+	# =======================================================
+	c:NOR ?= {
+		create_character = {
+			first_name = "Frederik"
+			last_name = "von Oldenburg"
+			culture = cu:danish      # 에러 수정 완료
+			historical = yes
+			birth_date = 1768.1.28 # 덴마크 국왕 프레데리크 6세의 실제 생년월일
+			ruler = yes            # 노르웨이의 공동 국왕으로 임명
+			interest_group = ig:ig_landowners
+			traits = {
+				trait:traditionalist
+			}
+		}
+	}
+}

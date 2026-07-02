@@ -1,0 +1,111 @@
+﻿# 1. 쾰른 대주교령 (선생님께서 성공하신 완벽한 버전)
+KOL = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_cross_denmark.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { scale = { 2.0 2.0 } position = { 0.45 0.5 } }
+	}
+}
+
+# 시스레니아 자유국 (완벽한 가로 3분할 삼색기 구현)
+WGF = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	color2 = "green"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 0.334 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "blue"
+		color2 = "blue"
+		instance = { position = { 0.5 0.833 } scale = { 1.0 0.334 } }
+	}
+}
+
+# 뮌스터 주교령
+MUN = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow_dark"
+	color2 = "yellow_dark"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 0.334 } }
+	}
+}
+
+# 제2공화국 - 순수 스크립트 노르망디 국기
+FSR_normandy = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "red"
+
+	colored_emblem = {
+		texture = "ce_lion_passant.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { position = { 0.5 0.33 } scale = { 0.7 0.5 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_lion_passant.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { position = { 0.5 0.67 } scale = { 0.7 0.5 } }
+	}
+}
+
+# 뷔르츠부르크 대공국
+WZB = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { position = { 0.5 0.25 } scale = { 1.0 0.5 } }
+	}
+}
+
+# =======================================================
+# 🍋 시칠리아 왕국 (SCL) 전통 트리나크리아 국기 정의
+# =======================================================
+SCL = {
+	# 배경: 선생님 게임 환경에서 정상 작동이 검증된 황금빛 단색 배경
+	pattern = "pattern_solid.tga"
+	color1 = "gold"
+	color2 = "gold"
+}
+
+# =======================================================
+# ⚓ 제노바 공화국 (GEN) 오리지널 성 조지 십자가 국기 정의
+# =======================================================
+GEN = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_cross_denmark.dds" # 바닐라 십자가 에셋 호출
+		color1 = "red"                   # 제노바를 상징하는 선명한 빨간색
+		color2 = "red"
+		instance = { 
+			scale = { 2.0 2.0 }          # 국기에 꽉 차도록 스케일 업
+			position = { 0.5 0.5 }       # 정확히 정중앙 정렬
+		}
+	}

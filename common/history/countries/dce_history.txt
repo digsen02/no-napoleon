@@ -1,0 +1,38 @@
+﻿COUNTRIES = {
+	c:DCE ?= {
+
+		effect_starting_technology_tier_2_tech = yes
+		
+		# 🏢 원래 BCE의 행정 식민지 고유 법률 체계 완벽 이식
+		activate_law = law_type:law_colonial_administration
+		activate_law = law_type:law_total_separation
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_subjecthood
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_debt_slavery
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_oligarchy
+
+		# 피지배층 수정 조항(Amendment) 세팅 복구
+		active_law:lawgroup_citizenship ?= { 
+			add_amendment = {
+				type = amendment_racialized_subjecthood
+				sponsor = PREV.ig:ig_armed_forces
+			}
+		}
+		
+		# 지주 및 군부 집권 여당 구성
+		ig:ig_landowners ?= {
+			add_ruling_interest_group = yes
+		}
+		ig:ig_armed_forces ?= {
+			add_ruling_interest_group = yes
+		}
+
+		# 소비세 설정
+		add_taxed_goods = g:grain
+	}
+}

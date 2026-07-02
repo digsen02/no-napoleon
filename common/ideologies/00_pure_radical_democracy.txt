@@ -1,0 +1,46 @@
+﻿ideology_pure_radical_democracy = {
+	group = ideology_group_radical
+	priority = 10 # 다른 이데올로기보다 우선적으로 등장하도록 설정
+
+	# 이데올로기가 지지/반대하는 법안 설정
+	character_stances = {
+		law_universal_suffrage = strongly_approve # 보편적 참정권 강력 지지
+		law_council_republic = strongly_approve # 평의회 공화국 강력 지지
+		law_republic = approve # 공화국 지지
+		law_protected_speech = strongly_approve # 표현의 자유 강력 지지
+		
+		law_monarchy = strongly_disapprove # 군주제 강력 반대
+		law_autocracy = strongly_disapprove # 독재 강력 반대
+		law_oligarchy = strongly_disapprove # 과두제 강력 반대
+		law_wealth_voting = strongly_disapprove # 금권 선거 강력 반대
+		law_landed_voting = strongly_disapprove # 지주 선거 강력 반대
+	}
+
+	# 지도자 등장 확률 (프랑스에서만 등장)
+	leader_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			country = { exists = c:FRA } # 프랑스 태그 확인
+			OR = {
+				is_interest_group_type = ig_intelligentsia # 지식인
+				is_interest_group_type = ig_trade_unions # 노조
+				is_interest_group_type = ig_rural_folk # 전원주민
+			}
+		}
+	}
+	
+	# 선동가 등장 확률 (프랑스에서만 등장)
+	agitator_weight = {
+		base = 0
+		modifier = {
+			add = 100
+			country = { exists = c:FRA }
+			OR = {
+				is_interest_group_type = ig_intelligentsia
+				is_interest_group_type = ig_trade_unions
+				is_interest_group_type = ig_rural_folk
+			}
+		}
+	}
+}

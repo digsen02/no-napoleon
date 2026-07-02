@@ -1,0 +1,17 @@
+﻿COUNTRIES = {
+	c:SC1 ?= { # 👈 👑 오만 파일과 똑같이 ?= 로 안전장치를 채워줍니다!
+		effect_starting_technology_tier_2_tech = yes
+		set_tax_level = medium
+
+		# 👑 부왕령 고증 법률 세팅 (절대주의 체제 및 가톨릭 국교)
+		activate_law = law_type:law_monarchy                 # 군주제 (스페인 국왕을 받듦)
+		activate_law = law_type:law_autocracy                # 전제정치 (부왕의 절대 권력)
+		activate_law = law_type:law_state_religion           # 국교 (가톨릭교회)
+		activate_law = law_type:law_hereditary_bureaucrats  # 세습 관료제
+		activate_law = law_type:law_interventionism          # 간섭주의 경제
+		
+		# 집권 세력 (지주 및 가톨릭 교회 중심)
+		ig:ig_landowners = { add_ruling_interest_group = yes }
+		ig:ig_devout = { add_ruling_interest_group = yes }
+	}
+}

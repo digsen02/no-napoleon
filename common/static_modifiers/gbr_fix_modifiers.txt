@@ -1,0 +1,5 @@
+﻿# 🇬🇧 영국의 유령 조약항 디버프를 상쇄하기 위한 보상 버프 (아이콘 버그 수정본)
+gbr_compensation_modifier = {
+	country_prestige_add = 100          # 위신 100.0 고정치 추가
+	country_influence_mult = 0.10       # 영향력 +10% 곱연산 추가
+}

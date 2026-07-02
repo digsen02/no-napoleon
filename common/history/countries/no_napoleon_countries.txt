@@ -1,0 +1,266 @@
+﻿COUNTRIES = {
+		# ========================================================
+	# ⚓ 3. GEN (제노바 공화국) - 상업 공화정 체제 오버라이드 완료
+	# ========================================================
+	c:GEN = {
+		effect_starting_technology_tier_1_tech = yes
+		set_tax_level = medium
+
+		# 정치 및 통치 원칙 (상업 상인 공화정 도제 체제 연출)
+		activate_law = law_type:law_presidential_republic      
+		activate_law = law_type:law_oligarchy                  
+		
+		# 경제 및 토지 제도 (농노제 완전 파괴)
+		activate_law = law_type:law_mercantilism               
+		activate_law = law_type:law_tenant_farmers             
+		
+		# [유형 4 에러 수정] 미지정되어 강제 발동하던 전통주의 체제 제거
+		activate_law = law_type:law_interventionism            # 간섭주의 명시
+		activate_law = law_type:law_consumption_based_taxation # 기술 호환성에 맞게 소비세로 교체
+		
+		# 인권 및 사회 법률
+		activate_law = law_type:law_censorship                 
+		activate_law = law_type:law_freedom_of_conscience      
+		activate_law = law_type:law_appointed_bureaucrats      
+		
+		# 군사 법률
+		activate_law = law_type:law_professional_army          
+		activate_law = law_type:law_professional_navy          
+		
+		# 기업가(상인)와 지주(귀족)가 원로원을 양분하여 집권
+		ig:ig_industrialists = { add_ruling_interest_group = yes }
+		ig:ig_landowners = { add_ruling_interest_group = yes }
+	}
+
+	# ========================================================
+	# 🦅 4. SHQ (샤이키야 부족 연맹) - 기존 데이터 유지 및 정렬
+	# ========================================================
+	c:SHQ = {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		set_tax_level = medium
+
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_mercantilism            
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+
+		ig:ig_armed_forces = {
+			add_ruling_interest_group = yes
+		}
+		ig:ig_landowners = {
+			add_ruling_interest_group = yes
+		}
+	}
+
+	# ========================================================
+	# 🌊 5. MDB (미드리 바흐리 공국) - 기존 데이터 유지 및 정렬
+	# ========================================================
+	c:MDB = {
+		effect_starting_technology_tier_5_tech = yes
+		effect_starting_politics_traditional = yes
+		set_tax_level = medium
+
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_land_based_taxation
+
+		ig:ig_landowners = {
+			add_ruling_interest_group = yes
+		}
+	}
+c:BRI = {
+		effect_starting_technology_tier_1_tech = yes
+
+		# [정부/권력/종교/교육]
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_state_religion
+		activate_law = law_type:law_religious_schools
+		
+		# [공통 추가 법률]
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_dedicated_police
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_national_guard
+
+		# [BRI 전용 추가 법률]
+		activate_law = law_type:law_civilian_sailors
+		activate_law = law_type:law_colonial_resettlement
+		activate_law = law_type:law_censorship
+
+		# [보너스 기술]
+		add_technology_researched = tech_bureaucracy
+	}
+# ========================================================
+	# 4. KOL (쾰른 대주교령) - WGF 방식으로 문법 전면 수정 (effect 삭제)
+	# ========================================================
+	c:KOL = {
+		effect_starting_technology_tier_1_tech = yes
+
+		# [정부/권력/종교]
+		activate_law = law_type:law_theocracy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_state_religion
+		
+		# [기본 공통 법률 세팅]
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_per_capita_based_taxation
+		
+		# [보너스 기술]
+		add_technology_researched = tech_bureaucracy
+	}
+
+	# ========================================================
+	# 5. MUN (뮌스터 주교령) - WGF 방식으로 문법 전면 수정 (effect 삭제)
+	# ========================================================
+	c:MUN = {
+		effect_starting_technology_tier_1_tech = yes
+
+		# [정부/권력/종교] - 신정주의 고증
+		activate_law = law_type:law_theocracy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_state_religion
+		
+		# [기본 공통 법률 세팅]
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_per_capita_based_taxation
+		
+		# [기본 문명 기술]
+		add_technology_researched = tech_bureaucracy
+	}
+# 6. WZB (뷔르츠부르크 대공국) - 남독일 학문과 가톨릭의 허브
+	# ========================================================
+	c:WZB = {
+		effect_starting_technology_tier_1_tech = yes
+
+		# [정부/권력/종교] -전통 신정제 및 가톨릭 국교 고증
+		activate_law = law_type:law_theocracy
+		activate_law = law_type:law_autocracy
+		activate_law = law_type:law_state_religion
+		
+		# [교육/치안] - 유서 깊은 주교령 고증으로 '종교 학교'와 '검열' 배치
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_dedicated_police
+		
+		# [경제/사회 기본 법률]
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_tenant_farmers
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_per_capita_based_taxation
+
+		# [역사적 보너스 기술] 
+		# 1402년 설립된 명문 뷔르츠부르크 대학교 고증 ➔ '학문' 및 '낭만주의' 선행 연구
+		add_technology_researched = tech_bureaucracy
+	}
+
+	# 베네치아와 제노바 공통 세팅
+	c:VEN = {
+		# 왕정이 아닌 공화정
+		activate_law = law_type:law_presidential_republic # (도제 선거 시스템 고증)
+		
+		# 민주주의가 아닌 귀족/거상들의 과두 정치
+		activate_law = law_type:law_oligarchy 
+		
+		# 중상주의 및 해운업
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_professional_navy
+		
+		# 기업가(상인)와 지주(원로원 귀족)가 권력 양분
+		ig:ig_industrialists = { add_ruling_interest_group = yes }
+		ig:ig_landowners = { add_ruling_interest_group = yes }
+}
+c:SIC = {
+		effect_starting_technology_tier_1_tech = yes
+		set_tax_level = medium
+
+		# 본래 역사대로 전통적인 군주정과 유산 투표제 주입
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_wealth_voting
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_protectionism
+		activate_law = law_type:law_professional_army
+		
+		# 지주 세력이 조정을 장악한 상태 고증
+		ig:ig_landowners = {
+			add_ruling_interest_group = yes
+		}
+	}
+c:TUN = {
+	effect_starting_technology_tier_1_tech = yes
+	set_tax_level = medium
+
+	# 🏛️ 튀니스 시작 법률 세팅 (선생님 픽: 전문직업군 & 자유무역 반영)
+	activate_law = law_type:law_professional_army          # 군사: 전문직업군 (상비군 체제)
+	activate_law = law_type:law_free_trade                # 경제: 자유무역 (기존 중상주의에서 전격 개방)
+	activate_law = law_type:law_tenant_farmers             # 토지: 소작농 부역 (기존 체제 유지)
+	
+	# 📚 법률 제정 및 유지를 위한 필수 선행 기술 연구 완료 처리
+}
+# ========================================================
+	# 8. SNR (센나르 군주국)
+	# ========================================================
+	c:SNR = {
+		# [경제/사회 기술 레벨 조정 - 중상주의 가능 수준으로 기술 상향]
+		effect_starting_technology_tier_4_tech = yes       # 👈 원시 5티어에서 중상주의가 허용되는 4티어로 적절히 조정!
+		effect_starting_politics_traditional = yes
+		set_tax_level = medium
+
+		# [토속 및 보수 법률 체계]
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_mercantilism            # 👈 에러를 뿜던 고립주의 대신 정상적으로 중상주의 안착!
+
+		# [구체제 기득권 집권]
+		ig:ig_devout = {
+			add_ruling_interest_group = yes
+		}
+		ig:ig_landowners = {
+			add_ruling_interest_group = yes
+		}
+	}
+
+	c:STH = {
+		# [기술 및 정치 체제 기본값 매크로]
+		effect_starting_technology_tier_5_tech = yes       # 아프리카 토착 국가 기준의 T5 기술력 적용
+		effect_starting_politics_traditional = yes         # 전통주의 정치 매크로 주입
+		set_tax_level = medium
+
+		# [소토 왕국 고증 법률 체계]
+		activate_law = law_type:law_monarchy               # 위대한 명군 모쇼에쇼 1세의 '군주정'
+		activate_law = law_type:law_autocracy              # 전제정치
+		activate_law = law_type:law_traditionalism         # 전통주의 경제 (보어인의 침략이 없어 파괴되지 않음)
+		activate_law = law_type:law_isolationism           # 고립주의 무역 정책
+		activate_law = law_type:law_land_based_taxation    # 지세 중심 조세
+		activate_law = law_type:law_peasant_levies         # 농민 징집대
+
+		# [집권 여당 세팅 - 귀족 지주와 전사 군부]
+		ig:ig_landowners = {
+			add_ruling_interest_group = yes
+		}
+		ig:ig_armed_forces = {
+			add_ruling_interest_group = yes
+		}
+	}
+}

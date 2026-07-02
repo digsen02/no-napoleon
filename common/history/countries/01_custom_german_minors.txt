@@ -1,0 +1,30 @@
+﻿COUNTRIES = {
+	# 1. 쾰른 대주교령
+	c:KOL = {
+		set_capital = STATE_NORTH_RHINE # 수도 설정
+		effect_starting_technology_tier_2_tech = yes # 기본 기술 부여
+		effect_starting_politics_traditional = yes # 기본 보수 정부 부여
+	}
+
+	# 2. 뮌스터 주교령
+	c:MUN = {
+		set_capital = STATE_WESTPHALIA
+		effect_starting_technology_tier_2_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+
+	# 3. 시스레니아 왕국
+	c:WGF = {
+		# 주의: WGF에게 영토를 배정한 주(State) 이름을 아래에 정확히 적어주세요!
+		set_capital = STATE_RHINELAND 
+		effect_starting_technology_tier_2_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+
+	# 4. 뷔르츠부르크 (프랑켄)
+	c:WZB = {
+		set_capital = STATE_FRANCONIA
+		effect_starting_technology_tier_2_tech = yes
+		effect_starting_politics_traditional = yes
+	}
+}

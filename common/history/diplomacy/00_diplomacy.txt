@@ -1,0 +1,9 @@
+﻿DIPLOMACY = {
+	# 🕌 콘스탄티네 공국(CON)을 오스만 제국(TUR)의 자치령(Dominion)으로 설정
+	c:TUR ?= {
+		create_diplomatic_pact = {
+			country = c:CON
+			type = dominion
+		}
+	}
+}

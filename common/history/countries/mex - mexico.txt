@@ -1,0 +1,42 @@
+﻿COUNTRIES = {
+	c:MEX ?= {
+		effect_starting_technology_tier_2_tech = yes
+		set_tax_level = medium
+
+		# 👑 통치 및 권력 (부왕의 철권통치 체제)
+		activate_law = law_type:law_colonial_administration   # 식민 정부 (부왕령)
+		activate_law = law_type:law_autocracy                 # 전제정치
+		activate_law = law_type:law_appointed_bureaucrats     # 임명직 관료제 (보르본 개혁 관료)
+
+		# ✝️ 종교 및 시민권 (카스타 신분제와 가톨릭의 지배)
+		activate_law = law_type:law_state_religion            # 국교 (가톨릭 교회)
+		activate_law = law_type:law_subjecthood               # 신민 체제 (카스타 계급)
+		activate_law = law_type:law_migration_controls        # 이주 통제
+
+		# 💰 경제 및 조세 (아시엔다와 중상주의 통제 경제)
+		activate_law = law_type:law_mercantilism              # 중상주의
+		activate_law = law_type:law_agrarianism               # 농본주의
+		activate_law = law_type:law_per_capita_based_taxation # 인두조세 (원주민 공납)
+		activate_law = law_type:law_latifundias               # 라티푼디아 (아시엔다 대농장)
+		
+		# ⛓️ 노동 및 노예제 (선생님 고증 픽 반영!)
+		activate_law = law_type:law_legacy_slavery      # 상속 노예제 (신분 대물림 세습제)
+		activate_law = law_type:law_no_workers_rights         # 노동권 없음
+
+		# 🪖 사회, 군사, 치안
+		activate_law = law_type:law_religious_schools         # 종교 학교
+		activate_law = law_type:law_censorship                # 검열
+		activate_law = law_type:law_legal_guardianship        # 법적 후견인 (여성권)
+		activate_law = law_type:law_outdated_poor_relief      # 자선 병원
+		activate_law = law_type:law_local_police              # 지역 경찰 (산타 에르만다드)
+		activate_law = law_type:law_peasant_levies            # 농민 징집병
+		activate_law = law_type:law_traditional_military      # 전통적 군대
+		activate_law = law_type:law_mercantile_navy           # 상선해군
+		activate_law = law_type:law_no_colonial_affairs       # 식민부 없음 (자신이 식민지이므로)
+
+		# 👑 집권 세력 세팅 (페닌술라레스 관료, 지주, 가톨릭 교회 중심)
+		ig:ig_landowners = { add_ruling_interest_group = yes }
+		ig:ig_devout = { add_ruling_interest_group = yes }
+		ig:ig_armed_forces = { add_ruling_interest_group = yes }
+	}
+}

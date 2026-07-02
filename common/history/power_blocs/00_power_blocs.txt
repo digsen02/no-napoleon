@@ -1,0 +1,118 @@
+﻿POWER_BLOCS = {
+	c:GBR ?= {
+		create_power_bloc = {
+			name = BRITISH_EMPIRE
+			map_color = hsv{ 0.99  0.7  0.9 }
+			founding_date = 1784.5.12
+			identity = identity_sovereign_empire
+			principle = principle_vassalization_1
+		}
+		if = {
+			limit = { has_dlc_feature = power_bloc_features }
+			power_bloc = { add_principle = principle_colonial_offices_2 }
+		}
+	}
+
+# ========================================================
+	# 👑 오스트리아 주도 - 신성 로마 제국 (원칙 커스텀 완료)
+	# ========================================================
+	c:AUS ?= {
+		create_power_bloc = {
+			name = HOLY_ROMAN_EMPIRE
+			map_color = { 210 180 50 }
+			founding_date = 1836.1.1
+			identity = identity_sovereign_empire
+			
+			# 1. 속국화 1단계 (주권적 제국 정체성의 필수 핵심 원칙)
+			principle = principle_vassalization_1
+
+			member = c:PRU
+			member = c:BAV
+			member = c:HAN
+			member = c:SAX
+			member = c:WUR
+			member = c:BAD
+
+			member = c:HES
+			member = c:HEK
+			member = c:NAS
+			member = c:BRA
+			member = c:ANH
+			member = c:OLD
+			member = c:MEC
+			member = c:MST
+			member = c:HOL
+			member = c:LIP
+			member = c:SCM
+			member = c:WLD
+
+			member = c:WEI
+			member = c:SCW
+			member = c:COB
+			member = c:MEI
+
+			member = c:FRM
+			member = c:HAM
+			member = c:BRE
+			member = c:LUB
+
+			# --- 정식 건국된 커스텀 제후국들 ---
+			member = c:KOL
+			member = c:MUN
+			member = c:WGF
+			member = c:WZB
+		}
+		if = {
+			limit = { has_dlc_feature = power_bloc_features }
+			power_bloc = {
+				# 2. 식량 표준화 3단계 (제국 내 팝들의 생활 수준 +1 폭풍 상승)
+				add_principle = principle_food_standardization_3
+				
+				# 3. 이동의 자유 3단계 (이주 매력도 대폭발, 전 세계의 팝이 제국으로 이주)
+				add_principle = principle_freedom_of_movement_3
+				
+				# 4. 시장 통일(내부 무역) 1단계 (제국 경제권 통합의 첫걸음)
+				add_principle = principle_internal_trade_1
+			}
+		}
+	}
+
+	c:RUS ?= {
+		create_power_bloc = {
+			name = ROSSIYSKAYA_IMPERIYA
+			map_color = { 78 134 62 }
+			founding_date = 1825.12.1
+			identity = identity_sovereign_empire
+			principle = principle_vassalization_1
+		}
+		if = {
+			limit = { has_dlc_feature = power_bloc_features }
+			power_bloc = { add_principle = principle_defensive_cooperation_1 }
+		}
+	}
+
+# ========================================================
+	# 🕌 오스만 제국 주도 - 이슬람 연대 체제 (북아프리카 고증 반영)
+	# ========================================================
+	c:TUR ?= {
+		create_power_bloc = {
+			name = POWER_BLOC_OTTOMAN_EMPIRE
+			map_color = { 135 35 35 } # 오스만 제국 고유의 핏빛 붉은색
+
+			founding_date = 1836.1.1
+			identity = identity_sovereign_empire
+			
+			# 1. 속국화 1단계 (제국 정체성의 핵심 원칙)
+			principle = principle_vassalization_1
+
+			# 🦅 마스카라 공국(MAS)을 '완전한 독립국' 상태로 오스만 세력권 회원국에 편입
+			member = c:MAS
+		}
+		if = {
+			limit = { has_dlc_feature = power_bloc_features }
+			power_bloc = {
+				# 2. 방어적 협력 1단계 (동맹 및 세력권 방어력 강화)
+				add_principle = principle_defensive_cooperation_1
+			}
+		}
+	}

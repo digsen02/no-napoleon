@@ -1,0 +1,35 @@
+﻿BUILDINGS = {
+	# 1. 라인란트 주 (쾰른 & 시스레니아)
+	s:STATE_RHINELAND = {
+		# 쾰른 대주교령: 식량 완전 자급자족 설정
+		region_state:KOL = {
+			create_building = { building = "building_government_administration" add_ownership = { country = { country = "c:KOL" levels = 2 } } reserves = 1 activate_production_methods = { "pm_clerical_bureaucrats" } }
+			create_building = { building = "building_wheat_farm" add_ownership = { building = { type = "building_manor_house" country = "c:KOL" levels = 8 region = "STATE_RHINELAND" } } reserves = 1 }
+			create_building = { building = "building_livestock_ranch" add_ownership = { building = { type = "building_manor_house" country = "c:KOL" levels = 5 region = "STATE_RHINELAND" } } reserves = 1 }
+		}
+		# 시스레니아 왕국: 풍요로운 식량 기지
+		region_state:WGF = {
+			create_building = { building = "building_government_administration" add_ownership = { country = { country = "c:WGF" levels = 2 } } reserves = 1 }
+			create_building = { building = "building_wheat_farm" add_ownership = { building = { type = "building_manor_house" country = "c:WGF" levels = 10 region = "STATE_RHINELAND" } } reserves = 1 }
+			create_building = { building = "building_livestock_ranch" add_ownership = { building = { type = "building_manor_house" country = "c:WGF" levels = 5 region = "STATE_RHINELAND" } } reserves = 1 }
+		}
+	}
+
+	# 2. 베스트팔렌 주 (뮌스터)
+	s:STATE_WESTPHALIA = {
+		region_state:MUN = {
+			create_building = { building = "building_government_administration" add_ownership = { country = { country = "c:MUN" levels = 2 } } reserves = 1 }
+			create_building = { building = "building_wheat_farm" add_ownership = { building = { type = "building_manor_house" country = "c:MUN" levels = 8 region = "STATE_WESTPHALIA" } } reserves = 1 }
+			create_building = { building = "building_livestock_ranch" add_ownership = { building = { type = "building_manor_house" country = "c:MUN" levels = 4 region = "STATE_WESTPHALIA" } } reserves = 1 }
+		}
+	}
+
+	# 3. 프랑켄 주 (뷔르츠부르크)
+	s:STATE_FRANCONIA = {
+		region_state:WZB = {
+			create_building = { building = "building_government_administration" add_ownership = { country = { country = "c:WZB" levels = 2 } } reserves = 1 }
+			create_building = { building = "building_wheat_farm" add_ownership = { building = { type = "building_manor_house" country = "c:WZB" levels = 8 region = "STATE_FRANCONIA" } } reserves = 1 }
+			create_building = { building = "building_livestock_ranch" add_ownership = { building = { type = "building_manor_house" country = "c:WZB" levels = 4 region = "STATE_FRANCONIA" } } reserves = 1 }
+		}
+	}
+}

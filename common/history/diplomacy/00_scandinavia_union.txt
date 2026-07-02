@@ -1,0 +1,22 @@
+﻿DIPLOMACY = {
+	# =======================================================
+	# ❄️ 대덴마크 왕국(DAN) 북유럽 종속국 네트워크 가동
+	# =======================================================
+	c:DAN ?= {
+		# 1. 노르웨이 수호 (나폴레옹이 없으므로 스웨덴에게 뺏기지 않음)
+		create_diplomatic_pact = {
+			country = c:NOR
+			type = personal_union
+		}
+		# 2. 슐레스비히 공국
+		create_diplomatic_pact = {
+			country = c:SCH
+			type = personal_union
+		}
+		# 3. 홀슈타인 공국
+		create_diplomatic_pact = {
+			country = c:HOL
+			type = personal_union
+		}
+	}
+}

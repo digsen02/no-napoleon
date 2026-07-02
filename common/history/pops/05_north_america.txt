@@ -1,0 +1,2341 @@
+﻿POPS = {
+	s:STATE_DISTRICT_OF_COLUMBIA = {
+		# total population of DC in 1830 was 30261, and 33745 in 1840. 32003 serves as a workable average.
+		# + Fairfax County, VA. Total pop in 1830 was 9204, 5203 free/4001 slaves
+		# + Montgomery Co, Prince George's Co, Charles co, St. Mary's Co and Calvert Co in MD- 80418 total, 42176 free/38242 slaves
+		# Number of actual pops adjusted from historical research to better fit the buildings
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 27544
+			}
+			create_pop = {
+				culture = dixie
+				size = 86263
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 7818
+			}
+		}
+	}
+# =======================================================
+# ⚜️ [선생님 고증 픽] 루이지애나 주 인구 대개혁 (STATE_LOUISIANA)
+# 기본 인구 294,684명 + 프랑스 내전 난민(케이준) 25% 폭증 고증
+# 새로운 총인구: 368,355명 | 딕시 문화 0% 전면 축출 완료
+# =======================================================
+	s:STATE_LOUISIANA = {
+		region_state:MEX = {
+			# ⚜️ 1. 루이지아노 (기존 총인구의 50%): 뉴올리언스의 토착 크레올 지배층
+			create_pop = {
+				culture = luisiano
+				religion = catholic
+				size = 10000
+				pop_type = aristocrats # 미시시피 삼각주를 장악한 크레올 대농장주
+			}
+			create_pop = {
+				culture = luisiano
+				religion = catholic
+				size = 3000
+				pop_type = clergymen # 대주교구 성직자
+			}
+			create_pop = {
+				culture = luisiano
+				religion = catholic
+				size = 2000
+				pop_type = officers # 지역 방위군 장교
+			}
+			create_pop = {
+				culture = luisiano
+				religion = catholic
+				size = 50000
+				pop_type = laborers # 뉴올리언스 항구 무역 종사자
+			}
+			create_pop = {
+				culture = luisiano
+				religion = catholic
+				size = 50000
+				pop_type = farmers # 기존 정착 농민
+			}
+			create_pop = {
+				culture = luisiano
+				religion = catholic
+				size = 32142
+				pop_type = peasants # 소작농
+			}
+			create_pop = {
+				culture = luisiano
+				religion = jewish
+				size = 200 # 바닐라 딕시 유대인 200명을 루이지아노 상인으로 복원
+			}
+
+			# 🏴 2. 아프로-카리베뇨 (기존 총인구의 45%): 가톨릭계 카리브 흑인
+			create_pop = {
+				culture = afro_caribeno
+				religion = catholic
+				size = 25000
+				pop_type = laborers # 자유를 얻은 유색인종(Gens de couleur libres)
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_caribeno
+				religion = catholic
+				size = 107608 # ⛓️ 미시시피 대농장의 세습 가톨릭 흑인 노예
+			}
+
+			# 👑 3. 테하노 (기존 총인구의 5%): 누에바에스파냐 부왕령 파견 통제군
+			create_pop = {
+				culture = tejano
+				religion = catholic
+				size = 10000
+				pop_type = servicemen # 🪖 프랑스계 주민과 국경을 통제하는 왕령 정규군
+			}
+			create_pop = {
+				culture = tejano
+				religion = catholic
+				size = 2000
+				pop_type = officers # 부왕령 총독부 장성급
+			}
+			create_pop = {
+				culture = tejano
+				religion = catholic
+				size = 1000
+				pop_type = clergymen # 스페인 이단심문관 파견직
+			}
+			create_pop = {
+				culture = tejano
+				religion = catholic
+				size = 1734
+				pop_type = laborers # 군수 보급 노동자
+			}
+
+			# 🥖 4. [특수 로어] 케이준 (기본 인구의 25% 증식): 프랑스 내전 회피 난민
+			create_pop = {
+				culture = cajun
+				religion = catholic
+				size = 40000
+				pop_type = farmers # 내전을 피해 아메리카 늪지대로 숨어든 억센 개척민
+			}
+			create_pop = {
+				culture = cajun
+				religion = catholic
+				size = 20000
+				pop_type = laborers # 도시 하층민으로 유입된 프랑스 난민
+			}
+			create_pop = {
+				culture = cajun
+				religion = catholic
+				size = 13671
+				pop_type = peasants # 빈털터리로 도착한 난민 소작농
+			}
+		}
+	}
+	s:STATE_NEW_YORK = {
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 2135000
+			}
+			create_pop = {
+				culture = yankee
+				religion = jewish
+				size = 2000
+			}
+			create_pop = {
+				culture = yankee
+				religion = catholic
+				size = 39996
+			}
+			create_pop = {
+				culture = afro_american
+				size = 20004
+			}
+			create_pop = {
+				culture = irish
+				size = 16000
+			}
+			create_pop = {
+				culture = iroquoian
+				size = 8000
+			}
+		}
+	}
+	s:STATE_VIRGINIA = { # population of VA proper minus Fairfax County, which had its population figures added to DC to inflate the pop count there
+		region_state:USA = {
+			create_pop = {
+				culture = dixie
+				size = 423597
+			}
+			create_pop = {
+				culture = dixie
+				religion = catholic
+				size = 48000
+			}
+			create_pop = {
+				culture = afro_american
+				size = 35120
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 312079
+			}
+		}
+	}
+	s:STATE_ALASKA = {
+		region_state:ALK = {
+			create_pop = {
+				culture = athabaskan
+				size = 7780
+			}
+			create_pop = {
+				culture = athabaskan
+				size = 3280
+				religion = orthodox
+			}
+			create_pop = {
+				culture = russian
+				size = 1000
+			}
+			create_pop = {
+				culture = inuit
+				size = 1968
+			}
+		}
+		region_state:ATB = {
+			create_pop = {
+				culture = athabaskan
+				size = 28000
+			}
+			create_pop = {
+				culture = inuit
+				size = 16000
+			}
+		}
+	}
+s:STATE_WASHINGTON = {
+		region_state:MEX = {		
+			# 🏹 살리시(Salish) 부족 (총 39,000명)
+			create_pop = {
+				culture = salish
+				size = 28000
+				pop_type = peasants
+			}
+			create_pop = {
+				culture = salish
+				size = 11000
+				pop_type = slaves # ⛓️ 부왕령 상속 노예 고증
+			}
+
+			# 🏹 네즈페르스(Nez Perce) 부족 (총 28,900명)
+			create_pop = {
+				culture = nez_perce
+				size = 20900
+				pop_type = peasants
+			}
+			create_pop = {
+				culture = nez_perce
+				size = 8000
+				pop_type = slaves # ⛓️ 부왕령 상속 노예 고증
+			}
+
+			# 🇪🇸 칼리포르니오 프런티어 개척단 (총 2,100명 - 3%)
+			create_pop = {
+				culture = californio
+				size = 700
+				pop_type = clergymen # ✝️ 선교사 (1%)
+			}
+			create_pop = {
+				culture = californio
+				size = 700
+				pop_type = servicemen # 🪖 군인 (1%)
+			}
+			create_pop = {
+				culture = californio
+				size = 700
+				pop_type = laborers # ⛏️ 일반인 (1%)
+			}
+		}
+	}
+	
+	s:STATE_OREGON = {
+		region_state:MEX = {
+			# 🏹 살리시(Salish) 부족 (총 32,000명)
+			create_pop = {
+				culture = salish
+				size = 24000
+				pop_type = peasants
+			}
+			create_pop = {
+				culture = salish
+				size = 8000
+				pop_type = slaves # ⛓️ 부왕령 상속 노예 고증
+			}
+
+			# 🏹 파이우트(Paiute) 부족 (총 32,000명)
+			create_pop = {
+				culture = paiute
+				size = 24000
+				pop_type = peasants
+			}
+			create_pop = {
+				culture = paiute
+				size = 8000
+				pop_type = slaves # ⛓️ 부왕령 상속 노예 고증
+			}
+
+			# 🏹 네즈페르스(Nez Perce) 부족 (총 17,600명)
+			create_pop = {
+				culture = nez_perce
+				size = 13000
+				pop_type = peasants
+			}
+			create_pop = {
+				culture = nez_perce
+				size = 4600
+				pop_type = slaves # ⛓️ 부왕령 상속 노예 고증
+			}
+
+			# 🇪🇸 칼리포르니오 프런티어 개척단 (총 3,400명 - 4%)
+			create_pop = {
+				culture = californio
+				size = 1275
+				pop_type = clergymen # ✝️ 선교사 (1.5%)
+			}
+			create_pop = {
+				culture = californio
+				size = 1275
+				pop_type = laborers # ⛏️ 일반인 (1.5%)
+			}
+			create_pop = {
+				culture = californio
+				size = 850
+				pop_type = servicemen # 🪖 군인 (1%)
+			}
+		}
+	}
+	s:STATE_IDAHO = {
+		region_state:ORG = {
+			create_pop = {
+				culture = paiute
+				size = 3000
+			}
+			create_pop = {
+				culture = yankee
+				size = 500
+			}
+			create_pop = {
+				culture = anglo_canadian
+				size = 500
+			}
+		}
+		region_state:NZP = {
+			create_pop = {
+				culture = nez_perce
+				size = 40000
+			}
+		}
+		region_state:BNN = {
+			create_pop = {
+				culture = paiute
+				size = 20000
+			}
+		}
+	}
+	s:STATE_COLORADO = {
+		region_state:MEX = {
+			create_pop = {
+				culture = siouan
+				size = 2000
+			}
+			create_pop = {
+				culture = tejano
+				size = 800
+			}
+		}
+		region_state:ARP = {
+			create_pop = {
+				culture = siouan
+				size = 10000
+			}
+		}
+		region_state:UTE = {
+			create_pop = {
+				culture = paiute
+				size = 4000
+			}
+			create_pop = {
+				culture = apache
+				size = 4000
+			}
+		}
+		region_state:USA = {
+			create_pop = {
+				culture = siouan
+				size = 1200
+			}
+			create_pop = {
+				culture = yankee
+				size = 600
+			}
+		}
+	}
+	s:STATE_WYOMING = {
+		region_state:USA = {
+			create_pop = {
+				culture = siouan
+				size = 8000
+			}
+		}
+		region_state:LKT = {
+			create_pop = {
+				culture = siouan
+				size = 6000
+			}
+		}
+		region_state:ARP = {
+			create_pop = {
+				culture = siouan
+				size = 4000
+			}
+		}
+		region_state:BNN = {
+			create_pop = {
+				culture = paiute
+				size = 12000
+			}
+		}
+		region_state:SLS = {
+			create_pop = {
+				culture = salish
+				#size = 1300 #historical increased for gameplay
+				size = 5600
+			}
+		}
+		region_state:ABS = {
+			create_pop = {
+				culture = siouan
+				size = 6500
+			}
+		}
+	}
+	s:STATE_MONTANA = {
+		region_state:USA = {
+			create_pop = {
+				culture = siouan
+				size = 5000
+			}
+			create_pop = {
+				culture = dakota
+				size = 2000
+			}
+		}
+		region_state:ABS = {
+			create_pop = {
+				culture = siouan
+				size = 28000
+			}
+		}
+		region_state:LKT = {
+			create_pop = {
+				culture = dakota
+				size = 6000
+			}
+		}
+		region_state:BLF = {
+			create_pop = {
+				culture = siouan
+				size = 14000
+			}
+		}
+		region_state:SLS = {
+			create_pop = {
+				culture = salish
+				#size = 5500 # historical increased for gameplay
+				size = 8600
+			}
+		}
+	}
+	s:STATE_NORTH_DAKOTA = {
+		region_state:USA = {
+			create_pop = {
+				culture = siouan
+				size = 6000
+			}
+		}
+		# DKT had 22000
+		region_state:LKT = {
+			create_pop = {
+				culture = dakota
+				size = 30000
+			}
+			create_pop = {
+				culture = siouan
+				size = 4000
+			}
+		}
+	}
+	s:STATE_SOUTH_DAKOTA = {
+		region_state:LKT = {
+			create_pop = {
+				culture = dakota
+				size = 34000
+			}
+		}
+		region_state:USA = {
+			create_pop = {
+				culture = siouan
+				size = 4000
+			}
+		}
+		# DKT has 12000
+	}
+	s:STATE_NEBRASKA = {
+		region_state:USA = {
+			create_pop = {
+				culture = siouan
+				size = 4000
+			}
+		}
+		region_state:LKT = {
+			create_pop = {
+				culture = dakota
+				size = 4000
+			}
+		}
+		region_state:PWN = {
+			create_pop = {
+				culture = caddoan
+				size = 10000
+			}
+			create_pop = {
+				culture = siouan
+				size = 2000
+			}
+		}
+	}
+	s:STATE_KANSAS = {
+		region_state:USA = {
+			create_pop = {
+				culture = siouan
+				size = 12000
+			}
+		}
+		region_state:PWN = {
+			create_pop = {
+				culture = caddoan
+				size = 8000
+			}
+		}
+		region_state:COM = {
+			create_pop = {
+				culture = siouan
+				size = 4000
+			}
+		}
+	}
+	s:STATE_OKLAHOMA = {
+		region_state:SEQ = {
+			create_pop = {
+				culture = siouan
+				size = 2000
+			}
+			create_pop = {
+				pop_type = slaves # there was even a slave revolt at Webbers Falls in 1842
+				culture = afro_american
+				size = 1200
+			}
+			create_pop = {
+				culture = caddoan
+				size = 8000
+			}
+			create_pop = {
+				culture = cherokee
+				size = 50800
+			}
+		}
+		region_state:COM = {
+			create_pop = {
+				culture = siouan
+				size = 18000
+			}
+		}
+	}
+	s:STATE_ARKANSAS = {
+		region_state:USA = {
+			create_pop = {
+				culture = cajun
+				religion = catholic
+				size = 12635
+			}
+			create_pop = {
+				culture = dixie
+				size = 33857
+			}
+			create_pop = {
+				culture = afro_american
+				size = 303 # 141 free in 1830, 465 free in 1840
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 15689
+			}
+			create_pop = {
+				culture = cherokee
+				size = 30136
+			}
+		}
+	}
+	s:STATE_MISSOURI = {
+		region_state:USA = {
+			create_pop = {
+				culture = cajun
+				religion = catholic
+				size = 9642
+			}
+			create_pop = {
+				culture = dixie
+				size = 138666
+			}
+			create_pop = {
+				culture = north_german
+				size = 2000
+			}
+			create_pop = {
+				culture = yankee
+				size = 165204
+			}
+			create_pop = {
+				culture = dixie
+				religion = catholic
+				size = 3996
+			}
+			create_pop = {
+				culture = afro_american
+				size = 1072 # 569 free in 1830, 1574 free in 1840
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 38928
+			}
+			create_pop = {
+				culture = irish
+				size = 8000
+			}
+		}
+	}
+	s:STATE_IOWA = {
+		region_state:USA = {
+			create_pop = {
+				culture = algonquian
+				size = 12000
+			}
+			create_pop = {
+				culture = dakota
+				size = 8000
+			}
+			create_pop = {
+				culture = yankee
+				size = 23992
+			}
+		}
+	}
+	s:STATE_MINNESOTA = {
+		region_state:USA = {
+			create_pop = {
+				culture = algonquian
+				size = 16000
+			}
+		}
+		region_state:LKT = {
+			create_pop = {
+				culture = dakota
+				size = 22000
+			}
+		}
+	}
+	s:STATE_WISCONSIN = {
+		region_state:USA = {
+			create_pop = {
+				culture = algonquian
+				size = 8000
+			}
+			create_pop = {
+				culture = yankee
+				size = 28004
+			}
+		}
+	}
+	s:STATE_INDIANA = {
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 631504
+			}
+			create_pop = {
+				culture = irish
+				size = 4004
+			}
+			create_pop = {
+				culture = north_german
+				size = 20000
+			}
+			create_pop = {
+				culture = afro_american
+				size = 8000
+			}
+		}
+	}
+	s:STATE_MICHIGAN = {
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 123996
+			}
+			create_pop = {
+				culture = algonquian
+				size = 12000
+			}
+			create_pop = {
+				culture = siouan
+				size = 4000
+			}
+			create_pop = {
+				culture = irish
+				size = 8000
+			}
+			create_pop = {
+				culture = yankee
+				religion = catholic
+				size = 4004
+			}
+		}
+	}
+	s:STATE_OHIO = {
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 1092200
+			}
+			create_pop = {
+				culture = afro_american
+				size = 16008
+			}
+			create_pop = {
+				culture = north_german
+				size = 128000
+			}
+			create_pop = {
+				culture = irish
+				size = 108004
+			}
+		}
+	}
+	s:STATE_KENTUCKY = {
+		region_state:USA = {
+			create_pop = {
+				culture = dixie
+				size = 239988
+			}
+			create_pop = {
+				culture = yankee
+				size = 316392
+			}
+			create_pop = {
+				culture = afro_american
+				size = 6117 # 4917 free in 1830, 7317 free in 1840
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 161879
+			}
+			create_pop = {
+				culture = irish
+				size = 20000
+			}
+		}
+	}
+	s:STATE_TENNESSEE = {
+		region_state:USA = {
+			create_pop = {
+				culture = dixie
+				size = 369604
+			}
+			create_pop = {
+				culture = cherokee
+				size = 7200
+			}
+			create_pop = {
+				culture = yankee
+				size = 204800
+			}
+			create_pop = {
+				culture = afro_american
+				size = 5040 # 4555 free in 1830, 5524 free in 1840
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 142960
+			}
+			create_pop = {
+				culture = irish
+				size = 39996
+			}
+			create_pop = {
+				culture = cherokee
+				size = 2528 # 1835 Cherokee Census "Henderson Roll"
+			}
+		}
+	}
+# =======================================================
+# ⚜️ 미시시피 주 (STATE_MISSISSIPPI) - 총인구 260,804명 완벽 보존
+# =======================================================
+	s:STATE_MISSISSIPPI = {
+		# 👑 1. 부왕령령 빌록시 해안가 (인구 10,000명 차출)
+		region_state:MEX = {
+			# ⚜️ 프랑스-스페인계 혼혈 크레올/케이준 자유민 (딕시 전면 축출)
+			create_pop = {
+				culture = luisiano
+				religion = catholic
+				size = 5000
+				pop_type = laborers # 항구 부두 노동자 및 어민
+			}
+			create_pop = {
+				culture = luisiano
+				religion = catholic
+				size = 500
+				pop_type = clergymen # 가톨릭 포교소 성직자
+			}
+			create_pop = {
+				culture = luisiano
+				religion = catholic
+				size = 500
+				pop_type = officers # 항구 세관원 및 부왕령 파견 장교
+			}
+
+			# 🏴 에스파냐 카리브계 흑인 (해방민 & 세습 노예)
+			create_pop = {
+				culture = afro_caribeno
+				religion = catholic
+				size = 500
+				pop_type = laborers # 자유를 얻은 카리브계 흑인
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_caribeno
+				religion = catholic
+				size = 3500 # ⛓️ 항구 및 인근 농장에 귀속된 가톨릭 흑인 노예
+			}
+		}
+
+		# 🇺🇸 2. 미국령 미시시피 내륙 (해안가로 빠진 1만명 정확히 차감)
+		region_state:USA = {
+			create_pop = {
+				culture = dixie
+				size = 166804 # (172,804 - 6,000 차감)
+			}
+			create_pop = {
+				culture = afro_american
+				size = 443 # (943 - 500 차감)
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 83557 # (87,057 - 3,500 차감)
+			}
+		}
+	}
+
+# =======================================================
+# ⚜️ 앨라배마 주 (STATE_ALABAMA) - 총인구 600,480명 완벽 보존
+# =======================================================
+	s:STATE_ALABAMA = {
+		# 👑 1. 부왕령령 모빌 해안가 (인구 25,004명 차출)
+		region_state:MEX = {
+			# ⚜️ 바닐라의 '가톨릭 딕시' 16,004명을 루이지아노 케이준으로 완벽 복원!
+			create_pop = {
+				culture = luisiano
+				religion = catholic
+				size = 12000
+				pop_type = laborers # 모빌 항구의 억센 크레올 선원 및 노동자
+			}
+			create_pop = {
+				culture = luisiano
+				religion = catholic
+				size = 3004
+				pop_type = farmers # 케이준 늪지대 농민
+			}
+			create_pop = {
+				culture = luisiano
+				religion = catholic
+				size = 1000
+				pop_type = aristocrats # 모빌의 유서 깊은 프랑스계 대농장주
+			}
+
+			# 🏴 에스파냐 카리브계 흑인 (해방민 & 세습 노예)
+			create_pop = {
+				culture = afro_caribeno
+				religion = catholic
+				size = 1000
+				pop_type = laborers # 자유 해방 흑인 (Creoles of Color)
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_caribeno
+				religion = catholic
+				size = 8000 # ⛓️ 부왕령 상속 노예제에 묶인 카리브계 흑인 노예
+			}
+		}
+
+		# 🇺🇸 2. 미국령 앨라배마 내륙 (모빌 해안가로 빠진 인구 정확히 차감)
+		region_state:USA = {
+			create_pop = {
+				culture = dixie
+				size = 329008 # (순정 유지: 가짜 가톨릭 딕시만 차출했으므로 변동 없음)
+			}
+			create_pop = {
+				culture = afro_american
+				size = 806 # (1,806 - 1,000 차감)
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 221998 # (229,998 - 8,000 차감)
+			}
+			# (가톨릭 딕시 16,004명은 멕시코 방으로 이주 완료되어 삭제)
+			create_pop = {
+				culture = cherokee
+				size = 1424
+			}
+			create_pop = {
+				culture = muskogean
+				size = 22240
+			}
+		}
+	}
+	# =======================================================
+# ☀️ [선생님 고증 픽] 플로리다 주 인구 대개혁 (STATE_FLORIDA)
+# 총인구: 92,996명 | 아프로-카리베뇨 절대다수화 및 세미놀 가톨릭화 완료
+# =======================================================
+	s:STATE_FLORIDA = {
+		# 👑 1. 부왕령 직할령 영역 (총인구: 82,996명 완벽 보존)
+		region_state:MEX = {
+			# 🏴 [선생님 픽] 플로리다의 압도적 다수를 차지하는 에스파냐 카리브 흑인 (72.2%)
+			create_pop = {
+				pop_type = slaves
+				culture = afro_caribeno
+				religion = catholic
+				size = 45000 # ⛓️ 쿠바에서 유입되어 대농장에서 구르는 가톨릭 세습 노예
+			}
+			create_pop = {
+				culture = afro_caribeno
+				religion = catholic
+				size = 15000
+				pop_type = laborers # ⚓ 세인트 어거스틴 항구의 자유 유색인종 군인 및 노동자
+			}
+
+			# ⚜️ [선생님 픽] 루이지애나에서 이주해온 프랑스-스페인계 크레올 자유민
+			create_pop = {
+				culture = luisiano
+				religion = catholic
+				size = 12000
+				pop_type = laborers # 도시 정착민 및 상인
+			}
+			create_pop = {
+				culture = luisiano
+				religion = catholic
+				size = 4000
+				pop_type = farmers # 담배/설탕 플랜테이션 농민
+			}
+			create_pop = {
+				culture = luisiano
+				religion = catholic
+				size = 1000
+				pop_type = officers # 🪖 펜사콜라 요새를 수비하는 관료 및 장교
+			}
+			create_pop = {
+				culture = luisiano
+				religion = catholic
+				size = 1000
+				pop_type = clergymen # ✝️ 원주민 포교를 담당하는 가톨릭 성직자
+			}
+
+			# 🏹 [선생님 픽] 가톨릭 성교를 받아들이고 요새 주변에 정착한 머스코기(세미놀) 원주민
+			create_pop = {
+				culture = muskogean
+				religion = catholic # ✝️ 개신교가 아닌 가톨릭으로 완벽 개종!
+				size = 3000
+				pop_type = peasants
+			}
+
+			# 🇺🇸 [선생님 픽] 미국 조지아/캐롤라이나 등지에서 도망쳐온 소수의 아프리카계 미국인
+			create_pop = {
+				culture = afro_american
+				size = 996
+				pop_type = laborers # 숲속에 은거하거나 자유를 얻은 난민 흑인
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 1,000 # ⛓️ 부왕령 군대에게 체포되어 다시 노예가 된 정착 노예
+			}
+		}
+
+		# 🏹 2. 세미놀 원주민 특별 자치 영역 (총인구: 10,000명 완벽 보존)
+		region_state:SML = {
+			# [선생님 픽] 부왕령 정부와 동맹을 맺고 가톨릭을 수용한 세미놀 전사 부족
+			create_pop = {
+				culture = muskogean
+				religion = catholic # ✝️ 스페인 미션 시스템의 성공으로 가톨릭화 완료
+				size = 10000
+				pop_type = peasants # 에버글레이즈 늪지대의 자급자족 수렵농민
+			}
+		}
+	}
+	s:STATE_GEORGIA = {
+		region_state:USA = {
+			create_pop = {
+				culture = dixie
+				size = 329836
+			}
+			create_pop = {
+				culture = dixie
+				religion = jewish
+				size = 1000
+			}
+			create_pop = {
+				culture = cherokee
+				size = 8946 # 1835 Cherokee Census "Henderson Roll"
+			}
+			create_pop = {
+				culture = afro_american
+				size = 2620 # 2486 free in 1830, 2753 free in 1840
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 256172
+			}
+		}
+	}
+	s:STATE_WEST_VIRGINIA = {
+		region_state:USA = {
+			create_pop = {
+				culture = dixie
+				size = 160916
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 18081 # 17673 slaves in WV's counties in 1830, 18488 slaves in 1840
+			}
+			create_pop = {
+				culture = afro_american
+				size = 1808 # don't have easy numbers for WV's free non-white population, but ~10% of the enslaved population seems to roughly track
+			}
+			create_pop = {
+				culture = dixie
+				religion = catholic
+				size = 28000
+			}
+		}
+	}
+	s:STATE_MARYLAND = { # Actually Maryland + Delaware
+		region_state:USA = {
+			# Maryland: (1830, 447040) (1840, 470019), so 1835 est. 458530
+			# Delaware: (1830, 76748)  (1840, 78085),  so 1835 est. 77417
+			# minus 42176 free/38242 slaves that have been ceded to DC to inflate its pop figure
+			# aim for 535947 pops for Mega-Maryland (Megaland?) in total
+			create_pop = {
+				culture = dixie
+				size = 251997
+			}
+			# Maryland: 52938 free in 1830, 62078 free in 1840
+			# Delaware: 15855 free in 1830, 16919 free in 1840
+			create_pop = {
+				culture = afro_american
+				size = 48541
+			}
+			# Maryland: 102994 in 1830, 89737 in 1840
+			# Delaware: 3292 in 1830, 2605 in 1840
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 58467
+			}
+		}
+	}
+
+	s:STATE_DELAWARE = {
+		region_state:USA = {
+			create_pop = {
+				culture = dixie
+				size = 77000
+			}
+
+			create_pop = {
+					culture = afro_american
+					size = 16919
+			}
+
+			create_pop = {
+					pop_type = slaves
+					culture = afro_american
+					size = 2605
+			}
+		}
+	}
+
+	s:STATE_PENNSYLVANIA = {
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 1250496
+			}
+			create_pop = {
+				culture = yankee
+				religion = jewish
+				size = 2000
+			}
+			create_pop = {
+				culture = yankee
+				religion = catholic
+				size = 144008
+			}
+			create_pop = {
+				culture = irish
+				size = 59800
+			}
+			create_pop = {
+				culture = afro_american
+				size = 43996
+			}
+		}
+	}
+	s:STATE_NEW_JERSEY = {
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 303200
+			}
+			create_pop = {
+				culture = yankee
+				religion = catholic
+				size = 27996
+			}
+			create_pop = {
+				culture = afro_american
+				size = 15996
+			}
+		}
+	}
+	s:STATE_ILLINOIS = {
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 452400
+			}
+			create_pop = {
+				culture = afro_american
+				size = 4000
+			}
+		}
+	}
+	s:STATE_RHODE_ISLAND = {
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 104820
+			}
+		}
+	}
+	s:STATE_CONNECTICUT = {
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 199228
+			}
+		}
+	}
+	s:STATE_MASSACHUSETTS = {
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 754484
+			}
+			create_pop = {
+				culture = afro_american
+				size = 11996
+			}
+			create_pop = {
+				culture = irish
+				size = 52400
+			}
+			create_pop = {
+				culture = yankee
+				religion = catholic
+				size = 28400
+			}
+		}
+	}
+	s:STATE_NEW_HAMPSHIRE = {
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 223300
+			}
+			create_pop = {
+				culture = franco_canadian
+				size = 24000
+			}
+			create_pop = {
+				culture = yankee
+				religion = catholic
+				size = 32000
+			}
+		}
+	}
+	s:STATE_VERMONT = {
+		region_state:USA = {
+			create_pop = {
+				culture = yankee
+				size = 282848
+			}
+		}
+	}
+	s:STATE_MAINE = {
+		region_state:USA = {
+			create_pop = {
+				culture = anglo_canadian
+				size = 16000
+			}
+			create_pop = {
+				culture = yankee
+				size = 381228
+			}
+		}
+	}
+	s:STATE_NORTH_CAROLINA = {
+		region_state:USA = {
+			create_pop = {
+				culture = dixie
+				size = 492500
+			}
+			create_pop = {
+				culture = afro_american
+				size = 21138 # 19543 free in 1830, 22732 free in 1840
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 222862
+			}
+			create_pop = {
+				culture = cherokee
+				size = 3644 # 1835 Cherokee Census "Henderson Roll"
+			}
+		}
+	}
+	s:STATE_UTAH = {
+		region_state:MEX = {
+			create_pop = {
+				culture = paiute
+				size = 3000
+			}
+		}
+		region_state:NVJ = {
+			create_pop = {
+				culture = paiute
+				size = 2000
+			}
+			create_pop = {
+				culture = navajo
+				size = 4000
+			}
+		}
+		region_state:UTE = {
+			create_pop = {
+				culture = paiute
+				size = 11000
+			}
+		}
+	}
+	s:STATE_SOUTH_CAROLINA = {
+		region_state:USA = {
+			create_pop = {
+				culture = dixie
+				size = 253836
+			}
+			create_pop = {
+				culture = dixie
+				religion = jewish
+				size = 1000
+			}
+			create_pop = {
+				culture = cherokee
+				size = 6960
+			}
+			create_pop = {
+				culture = afro_american
+				size = 8099 # 7921 free in 1830, 8276 free in 1840
+			}
+			create_pop = {
+				pop_type = slaves
+				culture = afro_american
+				size = 318693
+			}
+		}
+	}
+	s:STATE_HAWAIIAN_ISLANDS = {
+		region_state:HAW = {
+			create_pop = {
+				pop_type = clergymen
+				culture = yankee
+				religion = protestant
+				size = 100
+			}
+			create_pop = {
+				pop_type = capitalists
+				culture = yankee
+				religion = protestant
+				size = 450
+			}
+			create_pop = {
+				pop_type = capitalists
+				culture = british
+				size = 500
+			}
+			create_pop = {
+				pop_type = capitalists
+				culture = russian
+				size = 250
+			}
+			create_pop = {
+				culture = hawaiian
+				religion = protestant
+				size = 132304
+			}
+			create_pop = {
+				culture = hawaiian
+				religion = catholic
+				size = 8500
+			}
+			create_pop = {
+				culture = han
+				size = 50000
+			}
+		}
+	}
+	s:STATE_ONTARIO = {
+		region_state:ONT = {
+			create_pop = {
+				culture = anglo_canadian
+				size = 366792
+			}
+			create_pop = {
+				culture = cree
+				size = 12200
+			}
+			create_pop = {
+				culture = franco_canadian
+				size = 23400
+			}
+			create_pop = {
+				culture = iroquoian
+				size = 3902
+			}
+			create_pop = {
+				culture = algonquian
+				size = 3902
+			}
+			create_pop = {
+				culture = franco_canadian
+				religion = protestant
+				size = 600
+			}
+		}
+		region_state:HBC = {
+			create_pop = {
+				culture = metis
+				size = 3996
+			}
+			create_pop = {
+				culture = siouan
+				size = 4000
+			}
+			create_pop = {
+				culture = anglo_canadian
+				size = 12000
+			}
+			create_pop = {
+				culture = cree
+				size = 28200
+			}
+		}
+	}
+	s:STATE_NEW_BRUNSWICK = {
+		# New Brunswick: 119457 in 1834, not counting First Nations
+		region_state:NBS = {
+			create_pop = {
+				culture = anglo_canadian
+				size = 65990
+			}
+			create_pop = {
+				culture = afro_american
+				size = 667
+			}
+			create_pop = {
+				culture = franco_canadian
+				size = 52800
+			}
+			# 1871 census figure; not easy to get numbers or estimates before the 1871 census, and changes afterwards make it hard to say if 1836-1871 should following a growing trend or shrinking trend for First Nations in Canada
+			create_pop = {
+				culture = algonquian
+				size = 1403
+			}
+		}
+		# Nova Scotia: 199906 in 1837, not counting First Nations
+		region_state:NVS = {
+			create_pop = {
+				culture = anglo_canadian
+				size = 196573
+			}
+			create_pop = {
+				culture = afro_american
+				size = 3333
+			}
+			# 1871 census figure; not easy to get numbers or estimates before the 1871 census, and changes afterwards make it hard to say if 1836-1871 should following a growing trend or shrinking trend for First Nations in Canada
+			create_pop = {
+				culture = algonquian
+				size = 1666
+			}
+		}
+	}
+	s:STATE_QUEBEC = {
+		region_state:QUE = {
+			create_pop = {
+				culture = franco_canadian
+				size = 547200
+			}
+			create_pop = {
+				culture = anglo_canadian
+				size = 5000
+			}
+			create_pop = {
+				culture = cree
+				size = 3000
+			}
+		}
+		region_state:HBC = {
+			create_pop = {
+				culture = inuit
+				size = 4000
+			}
+			create_pop = {
+				culture = cree
+				size = 18204
+			}
+			create_pop = {
+				culture = franco_canadian
+				size = 19200
+			}
+			create_pop = {
+				culture = anglo_canadian
+				size = 8000
+			}
+		}
+	}
+	s:STATE_NEWFOUNDLAND = {
+		region_state:GBR = {
+			create_pop = {
+				culture = inuit
+				size = 7980
+			}
+			create_pop = {
+				culture = irish
+				size = 40000
+			}
+			create_pop = {
+				culture = anglo_canadian
+				size = 39996
+			}
+		}
+	}
+	s:STATE_ALBERTA = {
+		region_state:HBC = {
+			create_pop = {
+				culture = anglo_canadian
+				size = 3999
+			}
+			create_pop = {
+				culture = siouan
+				size = 8200
+			}
+			create_pop = {
+				culture = metis
+				size = 11000
+			}
+		}
+		region_state:IRC = {
+			create_pop = {
+				culture = cree
+				size = 12000
+			}
+			create_pop = {
+				culture = siouan
+				size = 12004
+			}
+		}
+		region_state:BLF = {
+			create_pop = {
+				culture = siouan
+				size = 15400
+			}
+			create_pop = {
+				culture = metis
+				size = 5000
+			}
+		}
+	}
+	s:STATE_BRITISH_COLUMBIA = {
+		region_state:ORG = {
+			create_pop = {
+				culture = anglo_canadian
+				size = 6500
+			}
+			create_pop = {
+				culture = salish
+				size = 27396
+			}
+			create_pop = {
+				culture = athabaskan
+				size = 7000
+			}
+		}
+		region_state:ATB = {
+			create_pop = {
+				culture = athabaskan
+				size = 35200
+			}
+		}
+		region_state:HBC = {
+			create_pop = {
+				culture = anglo_canadian
+				size = 1500
+			}
+			create_pop = {
+				culture = athabaskan
+				size = 13000
+			}
+		}
+	}
+	s:STATE_SASKATCHEWAN = {
+		region_state:HBC = {
+			create_pop = {
+				culture = anglo_canadian
+				size = 3000
+			}
+			create_pop = {
+				culture = siouan
+				size = 4200
+			}
+			create_pop = {
+				culture = metis
+				size = 16000
+			}
+		}
+		region_state:IRC = {
+			create_pop = {
+				culture = siouan
+				size = 8000
+			}
+			create_pop = {
+				culture = cree
+				size = 24000
+			}
+		}
+	}
+	s:STATE_MANITOBA = {
+		region_state:HBC = {
+			create_pop = {
+				culture = anglo_canadian
+				size = 14848
+			}
+			create_pop = {
+				culture = siouan
+				size = 12000
+			}
+			create_pop = {
+				culture = metis
+				religion = protestant
+				size = 3996
+			}
+			create_pop = {
+				culture = athabaskan
+				size = 16000
+			}
+			create_pop = {
+				culture = metis
+				size = 20004
+			}
+		}
+		region_state:IRC = {
+			create_pop = {
+				culture = cree
+				size = 12000
+			}
+		}
+	}
+	s:STATE_YUKON_TERRITORY = {
+		region_state:HBC = {
+			create_pop = {
+				culture = athabaskan
+				size = 5500
+			}
+		}
+		region_state:ATB = {
+			create_pop = {
+				culture = athabaskan
+				size = 6500
+			}
+		}
+	}
+	s:STATE_NORTHWEST_TERRITORIES = {
+		region_state:HBC = {
+			create_pop = {
+				culture = athabaskan
+				size = 16000
+			}
+		}
+	}
+	s:STATE_NUNAVUT = {
+		region_state:HBC = {
+			create_pop = {
+				culture = inuit
+				size = 11980
+			}
+		}
+	}
+	s:STATE_BERMUDA = {
+		region_state:GBR = {
+			create_pop = {
+				culture = british
+				size = 14848
+			}
+			create_pop = {
+				culture = afro_caribbean
+				size = 12352
+			}
+		}
+	}
+# =======================================================
+# 🌵 [선생님 고증 픽] 텍사스 주 인구 대개혁 (STATE_TEXAS)
+# 텍사스 공화국(TEX) 지분을 누에바에스파냐(MEX)령으로 완벽 통합!
+# =======================================================
+	s:STATE_TEXAS = {
+		region_state:MEX = {
+			# 🇪🇸 1. 주류 지배층 및 바케로 테하노 (신설 고증)
+			create_pop = {
+				culture = tejano
+				size = 18000
+				pop_type = laborers # 거대한 목장(Rancho)을 경영하는 바케로/정착민
+			}
+			create_pop = {
+				culture = tejano
+				size = 5000
+				pop_type = servicemen # 🪖 국경 요새(Presidio)를 지키는 왕령 수비대
+			}
+			create_pop = {
+				culture = tejano
+				size = 3000
+				pop_type = farmers # 소작농
+			}
+			create_pop = {
+				culture = tejano
+				size = 1200
+				pop_type = officers # 👑 지역 사령관 및 귀족 아센다도
+			}
+			create_pop = {
+				culture = tejano
+				size = 800
+				pop_type = clergymen # ✝️ 국경 지대 가톨릭 포교소 성직자
+			}
+
+			# ⛓️ 2. 부왕령 자산 아프로-카리베뇨 세습 노예
+			create_pop = {
+				pop_type = slaves
+				culture = afro_caribeno # 🇨🇺 쿠바/카리브해에서 수입된 노예 고증
+				size = 12000
+			}
+
+			# 🇺🇸 3. 불법 밀입국 양키 (딕시) 개척민들
+			create_pop = {
+				culture = dixie
+				size = 5000
+				pop_type = peasants # 🤠 군대의 눈을 피해 숨어 사는 무허가 스쿼터
+			}
+
+			# 🏹 4. 피지배층 정착 원주민 부족들
+			create_pop = {
+				culture = oodham
+				size = 12000
+				pop_type = peasants
+			}
+			create_pop = {
+				culture = caddoan
+				size = 4000
+				pop_type = peasants
+			}
+			create_pop = {
+				culture = siouan
+				size = 1996
+				pop_type = peasants
+			}
+		}
+
+		# 🏹 5. 대평원의 절대강자 코만치 & 아파치 영역 (순정 유지)
+		region_state:COM = {
+			create_pop = {
+				culture = comanche
+				size = 18000
+			}
+			create_pop = {
+				culture = apache
+				size = 4000
+			}
+		}
+	}
+	s:STATE_NEVADA = {
+		region_state:MEX = {
+			create_pop = {
+				culture = paiute
+				size = 22000
+			}
+		}
+		region_state:BNN = {
+			create_pop = {
+				culture = paiute
+				size = 6000
+			}
+		}
+	}
+# =======================================================
+# 🌵 [선생님 고증 픽] 애리조나 주 인구 대개혁 (STATE_ARIZONA)
+# 총인구: 49,004명 | 테하노인: 1,004명 (2%) | 투손 요새 수비대 고증
+# =======================================================
+	s:STATE_ARIZONA = {
+		region_state:MEX = {
+			# 🇪🇸 1. 요새 안의 테하노 국경 수비대 (2%) - 멕시코인 전원 대체
+			create_pop = {
+				culture = tejano
+				size = 500
+				pop_type = servicemen # 🪖 투손 요새를 사수하는 억센 국경 정착 군인
+			}
+			create_pop = {
+				culture = tejano
+				size = 304
+				pop_type = laborers # 요새 보급품을 생산하는 노동자
+			}
+			create_pop = {
+				culture = tejano
+				size = 100
+				pop_type = officers # 👑 부왕령 파견 요새 사령관 및 장교
+			}
+			create_pop = {
+				culture = tejano
+				size = 100
+				pop_type = clergymen # ✝️ 북부 개종 전선을 담당하는 가톨릭 선교사
+			}
+
+			# 🏹 2. 가톨릭을 믿고 요새의 보호를 받는 정착 원주민들
+			create_pop = {
+				culture = oodham
+				size = 4000
+				pop_type = peasants
+			}
+			create_pop = {
+				culture = pueblo
+				size = 3000
+				pop_type = peasants
+			}
+
+			# ⛓️ 3. [부왕령 로어] 국경 토벌 작전으로 생포된 사막 원주민 노예
+			create_pop = {
+				culture = apache
+				size = 2000
+				pop_type = slaves # ⛓️ 요새 인근 광산에 귀속된 아파치 포로 노예
+			}
+			create_pop = {
+				culture = navajo
+				size = 1000
+				pop_type = slaves # ⛓️ 요새 인근 밭에서 구르는 나바호 포로 노예
+			}
+		}
+
+		# 🏹 4. 아직 야생에 살아남은 나바호 부족 영역 (토벌당한 만큼 인구 차출)
+		region_state:NVJ = {
+			create_pop = {
+				culture = navajo
+				size = 23000 # 1,000명은 MEX령 노예로 압류됨
+			}
+			create_pop = {
+				culture = paiute
+				size = 4000
+			}
+		}
+
+		# 🏹 5. 아직 야생에 살아남은 아파치 부족 영역 (토벌당한 만큼 인구 차출)
+		region_state:APC = {
+			create_pop = {
+				culture = apache
+				size = 9000 # 2,000명은 MEX령 노예로 압류됨
+			}
+			create_pop = {
+				culture = pueblo
+				size = 2000
+			}
+		}
+	}
+# =======================================================
+# 🌵 [선생님 고증 픽] 뉴멕시코 주 인구 대개혁 (STATE_NEW_MEXICO)
+# 총인구: 67,796명 | 테하노인: 27,796명 (41%) | 헤니사로 원주민 노예제 구현
+# =======================================================
+	s:STATE_NEW_MEXICO = {
+		region_state:MEX = {
+			# 🇪🇸 1. 사막 계곡의 지배자 테하노 (41%)
+			create_pop = {
+				culture = tejano # 멕시코인을 지우고 전원 테하노로 교체!
+				size = 16796
+				pop_type = laborers # 사막 목장 및 은 광산 정착민
+			}
+			create_pop = {
+				culture = tejano
+				size = 6000
+				pop_type = servicemen # 🪖 산타페 요새선(Presidio)을 지키는 국경 군대
+			}
+			create_pop = {
+				culture = tejano
+				size = 3000
+				pop_type = clergymen # ✝️ 원주민 개종을 주도하는 프란치스코회 성직자
+			}
+			create_pop = {
+				culture = tejano
+				size = 2000
+				pop_type = officers # 👑 대농장(Hacienda)을 소유한 지주 귀족
+			}
+
+			# 🏹 2. 가톨릭을 받아들이고 정착한 푸에블로(Pueblo) 원주민
+			create_pop = {
+				culture = pueblo
+				size = 13000
+				pop_type = peasants # 평화로운 자급자족 소작농
+			}
+			create_pop = {
+				culture = pueblo
+				size = 5000
+				pop_type = farmers # 정착 농민
+			}
+
+			# ⛓️ 3. 부왕령 군대에게 진압당해 끌려온 헤니사로(Genízaros) 원주민 노예
+			create_pop = {
+				culture = apache
+				size = 4000
+				pop_type = slaves # ⛓️ 생포되어 아시엔다에 귀속된 아파치계 세습 노예
+			}
+			create_pop = {
+				culture = navajo
+				size = 2000
+				pop_type = slaves # ⛓️ 생포되어 은 광산에 귀속된 나바호계 세습 노예
+			}
+		}
+
+		# 🏹 4. 아직 야생에 남아있는 나바호 & 파이우트 부족 영역 (토벌당한 만큼 인구 차출)
+		region_state:NVJ = {
+			create_pop = {
+				culture = navajo
+				size = 4000 # 2,000명은 MEX령 노예로 압류됨
+			}
+			create_pop = {
+				culture = paiute
+				size = 2000
+			}
+		}
+
+		# 🏹 5. 코만치 부족 영역 (순정 유지)
+		region_state:COM = {
+			create_pop = {
+				culture = siouan
+				size = 3000
+			}
+		}
+
+		# 🏹 6. 아직 야생에 남아있는 아파치 부족 영역 (토벌당한 만큼 인구 차출)
+		region_state:APC = {
+			create_pop = {
+				culture = apache
+				size = 7000 # 4,000명은 MEX령 노예로 압류됨
+			}
+		}
+	}
+# =======================================================
+# 🍇 [선생님 고증 픽] 캘리포니아 주 인구 최종 통일 (STATE_CALIFORNIA)
+# 총인구: 63,996명 | 칼리포르니오인: 24,000명 (37.5%) | 멕시코 문화 전면 흡수
+# =======================================================
+	s:STATE_CALIFORNIA = {
+		region_state:MEX = {
+			# 🇪🇸 1. 지배층 및 정착민 칼리포르니오 (37.5%)
+			create_pop = {
+				culture = californio
+				size = 4000
+				pop_type = clergymen # ✝️ 미션(선교소)을 통제하는 성직자
+			}
+			create_pop = {
+				culture = californio
+				size = 2000
+				pop_type = officers # 👑 아시엔다를 소유한 지주 귀족 엘리트
+			}
+			create_pop = {
+				culture = californio
+				size = 6000
+				pop_type = laborers # 포도원 및 대목장 관리인/정착민
+			}
+			create_pop = {
+				culture = californio
+				size = 2000
+				pop_type = servicemen # 해안 프레시디오(요새) 주둔군
+			}
+			create_pop = {
+				culture = californio
+				size = 10000 # 🇲🇽 기존 멕시코 소작농을 칼리포르니오로 완벽 흡수
+				pop_type = farmers 
+			}
+
+			# 🏹 2. 호칸(Hokan) 원주민 및 세습 노예 (순정 유지)
+			create_pop = {
+				culture = hokan
+				size = 28000
+				pop_type = peasants # 자유 소작농
+			}
+			create_pop = {
+				culture = hokan
+				size = 11996
+				pop_type = slaves # ⛓️ 부왕령 법률에 묶인 원주민 상속 노예
+			}
+		}
+	}
+	# 97864 in 1830, 127586 in 1840
+	# working total of 112724
+	s:STATE_SONORA = {
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 69087
+			}
+			create_pop = {
+				culture = oodham
+				size = 43637
+			}
+		}
+	}
+# =======================================================
+# 🌵 [선생님 고증 픽] 치와와 주 인구 대개혁 (STATE_CHIHUAHUA)
+# 총인구: 163,895명 | 테하노인: 139,895명 (85.3%) | 아파치 반군 노예화 고증
+# =======================================================
+	s:STATE_CHIHUAHUA = {
+		region_state:MEX = {
+			# 🇪🇸 1. 사막과 은 광산의 주류 지배층 테하노 (85.3%)
+			create_pop = {
+				culture = tejano
+				size = 100000
+				pop_type = laborers # 대목장 및 거대한 은 광산 노동자
+			}
+			create_pop = {
+				culture = tejano
+				size = 25000
+				pop_type = farmers # 소작농 및 개척 정착민
+			}
+			create_pop = {
+				culture = tejano
+				size = 10000
+				pop_type = servicemen # 🪖 아파치 토벌을 전담하는 북부 왕령 군대
+			}
+			create_pop = {
+				culture = tejano
+				size = 3000
+				pop_type = officers # 👑 대농장주(아센다도) 및 군 장교 엘리트
+			}
+			create_pop = {
+				culture = tejano
+				size = 1895
+				pop_type = clergymen # ✝️ 북부 포교원을 통제하는 가톨릭 성직자
+			}
+
+			# 🏹 2. 평화롭게 정착한 오오담(Oodham) 원주민
+			create_pop = {
+				culture = oodham
+				size = 8000
+				pop_type = peasants # 자급자족 자유 소작농
+			}
+
+			# ⛓️ 3. [부왕령 로어] 철권 진압당해 아시엔다로 끌려온 아파치 노예
+			create_pop = {
+				culture = apache
+				size = 10000
+				pop_type = slaves # ⛓️ 지하 은 광산에 강제 귀속된 세습 노예
+			}
+			create_pop = {
+				culture = apache
+				size = 6000
+				pop_type = peasants # 순화되어 수용된 원주민 평민
+			}
+		}
+	}
+
+# =======================================================
+# 🤠 [선생님 고증 픽] 리오그란데 주 인구 대개혁 (STATE_RIO_GRANDE)
+# 총인구: 224,503명 | 테하노인: 121,499명 (54.1%) | 오리지널 바케로의 요람
+# =======================================================
+	s:STATE_RIO_GRANDE = {
+		region_state:MEX = {
+			# 🇪🇸 1. 오리지널 카우보이 문화의 정점 테하노 (54.1%)
+			create_pop = {
+				culture = tejano
+				size = 85000
+				pop_type = laborers # 🐎 끝없는 평원에서 소를 모는 바케로 정착민
+			}
+			create_pop = {
+				culture = tejano
+				size = 20000
+				pop_type = farmers # 농장 소작농
+			}
+			create_pop = {
+				culture = tejano
+				size = 12000
+				pop_type = servicemen # 🪖 국경 및 해안선을 방어하는 군대
+			}
+			create_pop = {
+				culture = tejano
+				size = 3000
+				pop_type = officers # 👑 광활한 목초지를 소유한 귀족 아센다도
+			}
+			create_pop = {
+				culture = tejano
+				size = 1499
+				pop_type = clergymen # ✝️ 지역 교구 성직자
+			}
+
+			# 🏹 2. 가톨릭으로 완벽히 개종한 순종 원주민 (카스타 신분제 분리 고증)
+			create_pop = {
+				culture = oodham
+				religion = catholic
+				size = 50000
+				pop_type = peasants # ✝️ 신의 이름으로 노예화를 면한 자유민 평민
+			}
+			create_pop = {
+				culture = oodham
+				religion = catholic
+				size = 20004
+				pop_type = farmers # 가톨릭 정착 농민
+			}
+
+			# 🏹 3. 미개종 오오담 원주민 및 흑인 세습 노예
+			create_pop = {
+				culture = oodham
+				size = 20000
+				pop_type = peasants # 야생의 미개종 소작농
+			}
+			create_pop = {
+				culture = oodham
+				size = 7000
+				pop_type = slaves # ⛓️ 부왕령 법률에 의해 목장에 귀속된 원주민 노예
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 6000
+				pop_type = slaves # ⛓️ 카리브해에서 유입되어 탈출 불가한 세습 흑인 노예
+			}
+		}
+	}
+	s:STATE_VERACRUZ = { # 242658 in 1830, 259463 in 1840
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 251061
+			}
+		}
+	}
+	s:STATE_DURANGO = { # est. total of 156999. 153810 in 1830, 160187 in 1840
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 136199
+			}
+			create_pop = {
+				culture = oodham
+				size = 20000
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 800
+			}
+		}
+	}
+	s:STATE_SINALOA = { # est. total of 134941. 122285 in 1830, 147596 in 1840
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 113841
+			}
+			create_pop = {
+				culture = oodham
+				size = 20000
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 1100
+			}
+		}
+	}
+	# San Luis Potosi:	302390 in 1830, 326559 in 1840, so averaging out to 314475
+	# Guanajuato:		442916 in 1830, 591401 in 1840, so averaging out to 517159
+	# Queretaro:		114437 in 1830, 122962 in 1840, so averaging out to 118699
+	# working total number of 950333
+	s:STATE_BAJIO = {
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 594909
+			}
+			create_pop = {
+				culture = nahua
+				size = 266461
+			}
+			create_pop = {
+				culture = tarascan
+				size = 85162
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 3801
+			}
+		}
+	}
+	# Yucatan proper: 	417947 in 1830, 420726 in 1840, so averaging out to 419337
+	# Campeche:			64053 in 1830, 72707 in 1840, so averaging out to 68380
+	# Tabasco:			58518 in 1830, 63919 in 1840, so averaging out to 61219
+	# working total number of 548936
+	s:STATE_YUCATAN = {
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 226764
+			}
+			create_pop = {
+				culture = mayan
+				size = 388804
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 1400
+			}
+		}
+	}
+	# Mexico state (incl. Hidalgo): 1050153 in 1830, 1145759 in 1840, so averaging out to 1097956
+	# Puebla: 610950 in 1830, 661524 in 1840, so averaging out to 636237
+	# Tlaxcala: 72271 in 1830, 81524 in 1840, so averaging out to 76897
+	# working total number of 1811090
+	s:STATE_MEXICO = {
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 763486
+			}
+			create_pop = {
+				culture = mixtec
+				religion = catholic
+				size = 39996
+			}
+			create_pop = {
+				culture = nahua
+				size = 689604
+			}
+			create_pop = {
+				culture = zapotec
+				size = 264004
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 54000
+			}
+		}
+	}
+
+	# total of 231319. This number was revealed to me in a dream.
+	# jk. Couldn't find estimates for Guerrero in 1830 or 1840, but they could be found for 1870 onwards, so some math trickery was done. Neighboring Oaxaca's estimated 1835 population is 74.7% of its 1870 population, and 50.61% of its 1900 population, so those percentages were applied to Guerrero's 1870 and 1900 population figures, and the two results were averaged together into the above.
+	s:STATE_GUERRERO = {
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 114874
+			}
+			create_pop = {
+				culture = zapotec
+				size = 13183
+			}
+			create_pop = {
+				culture = tarascan
+				size = 60846
+			}
+			create_pop = {
+				culture = nahua
+				size = 27381
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 15036
+			}
+		}
+	}
+	s:STATE_OAXACA = { # approx 479674. 457504 in 1830, 501844 in 1840.
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 143903
+			}
+			create_pop = {
+				culture = zapotec
+				size = 40532
+			}
+			create_pop = {
+				culture = tarascan
+				size = 187073
+			}
+			create_pop = {
+				culture = nahua
+				size = 84182
+			}
+			create_pop = {
+				culture = afro_caribeno
+				size = 23984
+			}
+		}
+	}
+	# Jalisco: 656881 in 1830, 691397 in 1840, so averaging out to 674139
+	# Michoacan: 435281 in 1830, 497537 in 1840, so averaging out to 466409
+	# Colima: 45838 in 1830, 53389 in 1840, so averaging out to 49614
+	# working total of 1190162
+	# 1.5858
+	s:STATE_JALISCO = {
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 1011710
+			}
+			create_pop = {
+				culture = oodham
+				religion = catholic
+				size = 152078
+			}
+			create_pop = {
+				culture = oodham
+				size = 26373
+			}
+		}
+	}
+	# Zacatecas: 222918 in 1830, 274380 in 1840, so averaging out to 248649
+	# Aguascalientes: 57125 in 1830, 72193, so averaging out to 64659
+	# working total of 313308
+	s:STATE_ZACATECAS = {
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 137347
+			}
+			create_pop = {
+				culture = nahua
+				size = 175961
+			}
+		}
+	}
+	# 121424 in 1830, 138595 in 1840
+	# working total of 130010
+	s:STATE_CHIAPAS = {
+		region_state:MEX = {
+			create_pop = {
+				culture = mexican
+				size = 57846
+			}
+			create_pop = {
+				culture = mayan
+				size = 72164
+			}
+		}
+		region_state:UCA = {
+			create_pop = {
+				culture = mexican
+				size = 5562
+			}
+			create_pop = {
+				culture = central_american
+				size = 1854
+			}
+			create_pop = {
+				culture = mayan
+				size = 9251
+			}
+		}
+	}
+# =======================================================
+# ☀️ [선생님 고증 픽] 바하 캘리포르니아 주 인구 최종 통일 (STATE_BAJA_CALIFORNIA)
+# 총인구: 22,864명 | 칼리포르니오인: 12,500명 (54.7%) | 과반수 달성 완료
+# =======================================================
+	s:STATE_BAJA_CALIFORNIA = {
+		region_state:MEX = {
+			# 🇪🇸 1. 반도의 확실한 주류가 된 칼리포르니오 정착민 (54.7%)
+			create_pop = {
+				culture = californio
+				size = 2000
+				pop_type = clergymen # ✝️ 반도 각지의 선교 기지 성직자
+			}
+			create_pop = {
+				culture = californio
+				size = 1000
+				pop_type = officers # 지역 행정관 및 요새 장교
+			}
+			create_pop = {
+				culture = californio
+				size = 5500
+				pop_type = laborers # ⚓ 항구 및 어업 정착민
+			}
+			create_pop = {
+				culture = californio
+				size = 4000 # 🇲🇽 기존 멕시코 본토인을 칼리포르니오로 완벽 흡수
+				pop_type = peasants
+			}
+
+			# 🏹 2. 오오담(Oodham) 원주민 및 세습 노예 (순정 유지)
+			create_pop = {
+				culture = oodham
+				size = 6000
+				pop_type = peasants
+			}
+			create_pop = {
+				culture = oodham
+				size = 3000
+				pop_type = slaves # ⛓️ 광산 및 아시엔다의 원주민 상속 노예
+			}
+
+			# 🏴 3. 아프로-카리베뇨 세습 노예 (순정 유지)
+			create_pop = {
+				culture = afro_caribeno
+				size = 1364
+				pop_type = slaves # ⛓️ 이탈이나 해방 없이 전원 노예 상태 유지
+			}
+		}
+	}
+}

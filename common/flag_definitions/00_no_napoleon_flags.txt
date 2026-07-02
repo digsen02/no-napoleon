@@ -1,0 +1,67 @@
+﻿# 쾰른 대주교령의 기본 국기 선언
+KOL = {
+	flag_definition = {
+		coa = KOL
+		priority = 100
+	}
+}
+
+# 시스레니아 자유국의 기본 국기 선언
+WGF = {
+	flag_definition = {
+		coa = WGF
+		priority = 100
+	}
+}
+
+MUN = {
+	flag_definition = {
+		coa = MUN
+		priority = 200
+	}
+}
+
+# 1. 제2공화국 (기본 국기를 노르망디 국기로 전면 고정)
+FSR = {
+	flag_definition = {
+		coa = FSR_normandy
+		priority = 100
+	}
+}
+
+# 2. 남부 시민공화국 (기본 국기를 옥시타니 국기로 전면 고정)
+FCR = {
+	flag_definition = {
+		coa = OCC
+		priority = 100
+	}
+}
+
+# 3. 뮌스터 주교령 (바닐라 침범을 막기 위해 우선순위 격상)
+MUN = {
+	flag_definition = {
+		coa = MUN
+		priority = 100
+	}
+}
+
+FSR = {
+	flag_definition = {
+		coa = FSR_normandy # 위에서 정의한 노르망디 뼈대를 불러옵니다.
+		priority = 200
+	}
+}
+
+WZB = {
+	flag_definition = {
+		coa = WZB
+		priority = 100
+	}
+}
+# 👑 누에바에스파냐 부왕령 (구 멕시코) 국기 매칭 완료
+MEX = {
+	flag_definition = {
+		coa = SPC  
+		priority = 100
+	}
+}

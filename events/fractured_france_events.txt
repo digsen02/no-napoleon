@@ -1,0 +1,135 @@
+﻿namespace = fractured_france
+namespace = fractured_france_lore
+
+# ========================================================
+# [본편] 프랑스 대통합 이벤트 (입법공회 플레이어/AI 전용)
+# ========================================================
+fractured_france.1 = {
+	type = country_event
+	placement = root
+
+	title = fractured_france.1.t
+	desc = fractured_france.1.d
+	flavor = fractured_france.1.f
+	
+	event_image = {
+		video = "europenorthamerica_springtime_of_nations"
+	}
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	trigger = {
+		this = c:FRA
+	}
+
+	# 선택지 A: 무력 통일 
+	option = {
+		name = fractured_france.1.a
+		ai_chance = { base = 80 }
+		
+		ROOT = { add_infamy = 40 }
+		
+		every_country = {
+			limit = {
+				NOT = { this = ROOT } 
+				OR = {
+					country_has_primary_culture = cu:french
+					country_has_primary_culture = cu:occitan
+				}
+			}
+			every_scope_state = {
+				limit = {
+					NOT = { state_region = s:STATE_BRITTANY }
+				}
+				state_region = {
+					add_claim = ROOT
+				}
+			}
+		}
+
+		s:STATE_MAINE_ANJOU = {
+			add_claim = ROOT
+		}
+	}
+
+	# 선택지 B: 외교적 접근
+	option = {
+		name = fractured_france.1.b
+		ai_chance = { base = 20 }
+		
+		every_country = {
+			limit = {
+				NOT = { this = ROOT } 
+				OR = {
+					country_has_primary_culture = cu:french
+					country_has_primary_culture = cu:occitan
+				}
+			}
+			change_relations = {
+				country = ROOT
+				value = 50
+			}
+		}
+	}
+}
+
+# ========================================================
+# [서사 1부] 혁명의 황혼 (모든 프랑스 소국 시작 팝업)
+# ========================================================
+fractured_france_lore.1 = {
+	type = country_event
+	placement = root
+	duration = 1  # ◀◀ [수정] 하루 뒤 자동으로 2부로 강제 진행[cite: 2]
+	
+	title = fractured_france_lore.1.t
+	desc = fractured_france_lore.1.d
+	flavor = fractured_france_lore.1.f
+	
+	event_image = { video = "europenorthamerica_revolution" }
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	option = {
+		name = fractured_france_lore.1.a
+		trigger_event = { id = fractured_france_lore.2 popup = yes }
+	}
+}
+
+# ========================================================
+# [서사 2부] 1830년 7월 혁명
+# ========================================================
+fractured_france_lore.2 = {
+	type = country_event
+	placement = root
+	duration = 1  # ◀◀ [수정] 하루 뒤 자동으로 3부로 강제 진행[cite: 2]
+	
+	title = fractured_france_lore.2.t
+	desc = fractured_france_lore.2.d
+	flavor = fractured_france_lore.2.f
+	
+	event_image = { video = "europenorthamerica_strike" }
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	option = {
+		name = fractured_france_lore.2.a
+		trigger_event = { id = fractured_france_lore.3 popup = yes }
+	}
+}
+
+# ========================================================
+# [서사 3부] 피로 맺은 휴전
+# ========================================================
+fractured_france_lore.3 = {
+	type = country_event
+	placement = root
+	duration = 1  # ◀◀ [수정] 하루 뒤 자동으로 창이 닫히며 상황 종료[cite: 2]
+	
+	title = fractured_france_lore.3.t
+	desc = fractured_france_lore.3.d
+	flavor = fractured_france_lore.3.f
+	
+	event_image = { video = "europenorthamerica_springtime_of_nations" }
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	option = {
+		name = fractured_france_lore.3.a
+	}
+}

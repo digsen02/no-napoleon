@@ -1,0 +1,16 @@
+﻿anti_famine_cheat = {
+	# 바닐라 event_modifiers에서 검증된 깨지지 않는 순정 동상 아이콘
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+		
+	# [진짜 빅토리아 3 순정 토큰] 생활수준 하락으로 인한 급진파 생성 50% 차단
+	country_radicals_from_sol_drops_mult = -0.5
+	
+	# [진짜 빅토리아 3 순정 토큰] 정치 운동의 급진성 30% 감소
+	country_political_movement_radicalism_mult = -0.30
+	
+	# [진짜 빅토리아 3 순정 토큰] 생활수준 상승 시 충성파 생성 50% 증가
+	country_loyalists_from_sol_increases_mult = 0.50
+	
+	# 🛡️ [선생님 긴급 처방] 기아(Starvation)로 인한 팝 사망률 95% 감소
+	pop_starvation_mortality_mult = -0.95
+}

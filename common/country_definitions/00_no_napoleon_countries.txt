@@ -1,0 +1,107 @@
+﻿# 🏰 시스레니아 왕국 (Cisrhenian Kingdom)
+WGF = {
+	color = { 90 130 200 }			# 라인강을 상징하는 라인 블루
+	country_type = recognized		# 정식 승인국
+	tier = kingdom					# 국가 등급: 왕국
+	cultures = { south_german }		# 주류 문화: 북독일인 (라인란트 고증)
+	religion = catholic				# 종교: 가톨릭
+	capital = STATE_RHINELAND		# 수도: 라인란트 주
+}
+
+
+KOL = {
+	color = { 135 31 56 }			# 쾰른 대주교령의 상징인 고풍스러운 크림슨 상징색 (RGB 값)
+	country_type = recognized		# 미승인국이 아닌 정식 '승인국' 체급
+	tier = principality				# 국가 등급: 공국 (Principality)
+	cultures = { north_german }		# 주류 문화: 북독일인
+	capital = STATE_NORTH_RHINE		# 수도: 노르트라인 주
+        religion = catholic
+}
+
+MUN = {
+	color = { 220 165 40 }			# 뮌스터 주교령을 상징하는 찬란한 황금색 (RGB 값)
+	country_type = recognized		# 정식 승인국
+	tier = principality				# 국가 등급: 공국
+	cultures = { north_german }		# 주류 문화: 북독일인
+	capital = STATE_WESTPHALIA		# 수도: 베스트팔렌 주
+        religion = catholic
+}
+
+WZB = {
+	color = { 180 40 50 }			# 뷔르츠부르크를 상징하는 크림슨 레드 (RGB 값)
+	country_type = recognized		# 정식 승인국
+	tier = principality				# 국가 등급: 공국/대공국
+	cultures = { south_german }		# 프랑켄 지역 고증 문화: 남독일인
+	religion = catholic				# 종교 고증: 가톨릭(천주교)
+	capital = STATE_FRANCONIA		# 수도: 프랑켄 주
+}
+
+SCL = {
+	color = { 210 180 50 } # 시칠리아를 상징하는 부르봉 황금색
+	country_type = recognized
+	tier = kingdom
+	cultures = { south_italian }
+	capital = STATE_SICILY
+}
+
+GEN = {
+	color = { 180 30 30 }
+	country_type = recognized
+	tier = principality
+	cultures = { north_italian }
+	capital = STATE_PIEDMONT
+}
+
+# 🕌 센나르 술탄국 (Sennar Sultanate)
+SNR = {
+	color = { 45 95 75 }         # 푸른 술탄국이라는 별칭에 걸맞은 차분한 청록색
+	country_type = unrecognized
+	tier = principality
+	cultures = { sudanese }      # 수단 토착 문화
+	religion = sunni             # 이슬람 순니파
+}
+
+# 🦅 샤이키야 부족 연맹 (Shayqiya Confederacy)
+SHQ = {
+	color = { 150 110 65 }       # 나일강 사막의 정예 기병대를 상징하는 황토색
+	country_type = unrecognized
+	tier = principality
+	cultures = { sudanese }      # 수단 토착 문화
+	religion = sunni             # 이슬람 순니파
+}
+
+# 🌊 미드리 바흐리 공국 (Midri Bahri)
+MDB = {
+	color = { 180 70 50 }        # 홍해(Red Sea)의 붉은빛과 고원의 흙을 상징하는 적갈색
+	country_type = unrecognized
+	tier = principality
+	cultures = { tigray }        # 에리트레아 고원의 주류인 티그리냐(티그라이) 문화
+	religion = oriental_orthodox # 에티오피아 테와히도 정교회 (바닐라 고증)
+	capital = STATE_ERITREA      # 수도는 당연히 에리트레아 주
+}
+
+STH = {
+	color = { 74 114 159 }             # 소토 왕국의 정체성을 담은 사파이어 블루
+	country_type = unrecognized        # 미승인국 세팅
+	tier = kingdom                     # 왕국 체급
+	cultures = { sotho }               # 주 문화: 소토인
+	capital = STATE_VRYSTAAT         # 👈 🛠️ [치명적 오타 수정] FREE_STATE를 올바른 바닐라 코드인 VRYSTAAT로 교정!
+}
+
+BCE = {
+	color = { 120 180 200 } # 국가의 지도 색상 (예시)
+	country_type = unrecognized
+	tier = principality
+	cultures = { dutch }     # 🇳🇱 [교정] 주류 문화를 네덜란드인으로 고정
+	religion = protestant   # ⛪ [교정] 국교를 개신교로 고정
+}
+
+# 🇳🇱 [선생님 픽] 완벽한 네덜란드령 실론 신규 태그 창설
+DCE = {
+	color = { 120 180 200 } 
+	country_type = recognized
+	tier = principality
+	
+	cultures = { dutch }     # 처음부터 네덜란드인을 주류 문화로 고정
+	religion = protestant   # 처음부터 개신교를 국교로 고정
+}

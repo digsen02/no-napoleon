@@ -1,0 +1,304 @@
+﻿namespace = 1848
+
+# Regicide
+1848.1 = {
+	type = country_event
+	placement = root
+	title = 1848.1.t
+	desc = 1848.1.d
+	flavor = 1848.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_springtime_of_nations"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	trigger = {
+		always = no   # 👈 이 한 줄이 이벤트를 영구히 죽입니다.
+		has_law = law_type:law_monarchy
+		OR = {
+			is_enacting_law = law_type:law_presidential_republic
+			is_enacting_law = law_type:law_parliamentary_republic
+		}
+		any_interest_group = {
+			is_in_government = yes
+			leader = {
+				has_ideology = ideology:ideology_radical
+			}
+		}
+		NOT = {
+			has_modifier = regicide_averted
+		}
+		ruler = {
+			is_immortal = no
+		}
+	}
+
+	option = {
+		name = 1848.1.a
+		if = {
+			limit = { is_enacting_law = law_type:law_presidential_republic }
+			activate_law = law_type:law_presidential_republic
+		}
+		if = {
+			limit = { is_enacting_law = law_type:law_parliamentary_republic }
+			activate_law = law_type:law_parliamentary_republic
+		}
+		every_interest_group = {
+			limit = {
+				law_stance = {
+					law = law_type:law_monarchy
+					value > neutral
+				}
+			}
+			add_modifier = {
+				name = regicide
+				days = short_modifier_time
+			}
+		}
+		ruler = {
+			kill_character = yes
+		}
+	}
+	option = {
+		name = 1848.1.b
+		default_option = yes
+		add_enactment_modifier = {
+			name = regicide_averted
+		}
+	}
+}
+
+# Monarchism Stamped Out
+1848.2 = {
+	type = country_event
+	placement = root
+	title = 1848.2.t
+	desc = 1848.2.d
+	flavor = 1848.2.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_london_center"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	trigger = {
+		always = no   # 👈 저널 알람 연동 차단
+	}
+
+	immediate = {
+		ig:ig_landowners ?= {
+			save_scope_as = landowners_ig
+		}
+	}
+
+	option = {
+		name = 1848.2.a
+		default_option = yes
+		ig:ig_landowners ?= {
+			remove_ideology = ideology_paternalistic
+			add_ideology = ideology_republican_paternalistic
+		}
+	}
+	option = {
+		name = 1848.2.b
+	}
+}
+
+# New Constitution
+1848.3 = {
+	type = country_event
+	placement = root
+	title = 1848.3.t
+	desc = 1848.3.d
+	flavor = 1848.3.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_political_extremism"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	trigger = {
+		always = no   # 👈 헌법 개정 혁명 차단
+		OR = {
+			is_enacting_law = law_type:law_census_voting
+			is_enacting_law = law_type:law_universal_suffrage
+		}
+	}
+
+	option = {
+		name = 1848.3.a
+	}
+	option = {
+		name = 1848.3.b
+		default_option = yes
+	}
+}
+
+# Rise of Radicalism
+1848.4 = {
+	type = country_event
+	placement = root
+	title = 1848.4.t
+	flavor = 1848.4.f
+
+	duration = 3
+
+	trigger = {
+		always = no   # 👈 급진주의 발흥 차단
+	}
+
+	option = {
+		name = 1848.4.a
+		default_option = yes
+	}
+	option = {
+		name = 1848.4.b
+	}
+}
+
+# Radicals at the Gates
+1848.5 = {
+	type = country_event
+	placement = root
+	title = 1848.5.t
+	desc = 1848.5.d
+	flavor = 1848.5.f
+
+	duration = 3
+
+	trigger = {
+		always = no   # 👈 성문 앞의 급진파 차단
+	}
+
+	option = {
+		name = 1848.5.a
+	}
+	option = {
+		name = 1848.5.b
+	}
+	option = {
+		name = 1848.5.c
+		default_option = yes
+	}
+}
+
+# reaction completion event
+1848.6 = {
+	type = country_event
+	placement = root
+	title = 1848.6.t
+	desc = 1848.6.d
+	flavor = 1848.6.f
+
+	duration = 3
+
+	trigger = {
+		always = no   # 👈 반동 성공 이벤트 차단
+	}
+
+	option = {
+		name = 1848.6.a
+	}
+	option = {
+		name = 1848.6.b
+	}
+	option = {
+		name = 1848.6.c
+		default_option = yes
+	}
+}
+
+#########
+# Pre-Revolution Buildup
+#########
+
+# Growing frustration
+1848.10 = {
+	type = country_event
+	placement = root
+	title = 1848.10.t
+	desc = 1848.10.d
+	flavor = 1848.10.f
+
+	duration = 3
+
+	trigger = {
+		always = no   # 👈 좌절감 확산 무조건 차단!
+		NOT = { has_global_variable = peoples_springtime_happening }
+		is_in_geographic_region = geographic_region_europe
+	}
+
+	option = {
+		name = 1848.10.a
+		default_option = yes
+	}
+	option = {
+		name = 1848.10.b
+	}
+}
+
+# Financial Squeeze
+1848.11 = {
+	type = country_event
+	placement = root
+	title = 1848.11.t
+	desc = 1848.11.d
+	flavor = 1848.11.f
+
+	duration = 3
+
+	trigger = {
+		always = no   # 👈 재정 압박 혁명 전조 무조건 차단!
+		NOT = { has_global_variable = peoples_springtime_happening }
+		is_in_geographic_region = geographic_region_europe
+	}
+
+	option = {
+		name = 1848.11.a
+		default_option = yes
+	}
+	option = {
+		name = 1848.11.b
+	}
+}
+
+# The Crisis of Bread
+1848.12 = {
+	type = country_event
+	placement = scope:1848_famine_state
+	title = 1848.12.t
+	desc = 1848.12.d
+	flavor = 1848.12.f
+
+	duration = 3
+
+	trigger = {
+		always = no   # 👈 기근 폭동 연계 무조건 차단!
+		NOT = { has_global_variable = peoples_springtime_happening }
+		is_in_geographic_region = geographic_region_europe
+	}
+
+	option = {
+		name = 1848.12.a
+		default_option = yes
+	}
+	option = {
+		name = 1848.12.b
+	}
+}

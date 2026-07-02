@@ -1,0 +1,83 @@
+﻿COUNTRIES = {
+	c:FRA = { # ★ '=' 연산자로 바닐라 왕정 데이터를 완벽하게 밀어버립니다.
+		set_next_election_date = 1837.11.4
+		
+		effect_starting_technology_tier_1_tech = yes
+
+		set_tax_level = medium
+		
+		add_taxed_goods = g:wine
+		add_taxed_goods = g:liquor
+		
+		set_import_tariff_level = { 
+			goods = g:engines
+			level = low_subventions
+		}
+		
+		# Laws (★ 빅토리아 3 엔진 정식 내부 코드네임으로 완벽 교정 완료!)
+		activate_law = law_type:law_presidential_republic     # 대통령제 공화국 (정식 명칭)
+		activate_law = law_type:law_census_voting             # 재산 투표제 (정식 명칭)
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_protectionism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_colonial_resettlement
+		activate_law = law_type:law_dedicated_police
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_professional_navy
+		activate_law = law_type:law_poor_laws
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_national_guard
+		activate_law = law_type:law_peasant_proprietorship
+		activate_law = law_type:law_combination_acts
+		activate_law = law_type:law_colonial_slavery
+	
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 2
+		}
+
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 1
+		}
+
+		set_institution_investment_level = {
+			institution = institution_colonial_affairs
+			level = 1
+		}
+
+		ig:ig_intelligentsia ?= {
+			add_ruling_interest_group = yes
+		}
+
+		add_modifier = {
+			name = modifier_haitian_independence_payments_4
+		}
+
+		set_variable = {
+			name = fra_republic_counter
+			value = 1
+		}
+		if = {
+			limit = {
+				has_dlc_feature = voice_of_the_people_content
+			}
+			add_journal_entry = {
+				type = je_conquest_of_algeria
+			}
+		}
+		
+		add_company = company_type:company_dmc
+		company:company_dmc = {
+			set_company_establishment_date = 1746.1.1
+			set_company_state_region = s:STATE_ALSACE_LORRAINE
+		}
+		
+		set_variable = free_elections_var
+	}
+}

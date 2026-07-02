@@ -1,0 +1,19 @@
+﻿CHARACTERS = {
+	# =======================================================
+	# 🍋 시칠리아 왕국(SCL) ?= 블록 내부에서 국왕 직접 생성
+	# =======================================================
+	c:SCL ?= {
+		create_character = {
+			first_name = "Ferdinando"
+			last_name = "di Borbone"
+			culture = cu:south_italian  # 에러 수정 완료
+			historical = yes
+			birth_date = 1810.1.12
+			ruler = yes            # 시칠리아의 국왕(Ruler)으로 임명
+			interest_group = ig:ig_landowners
+			traits = {
+				trait:traditionalist
+			}
+		}
+	}
+}
