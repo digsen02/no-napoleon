@@ -5,6 +5,7 @@
 		create_diplomatic_pact = { country = c:PCO type = colony }
 		create_diplomatic_pact = { country = c:PHI type = dominion }
                 create_diplomatic_pact = { country = c:MEX type = puppet }
+				create_diplomatic_pact = { country = c:LOU type = puppet }
 	}
 
 	# --- 네덜란드 동군연합 및 동인도 (교정 완료)

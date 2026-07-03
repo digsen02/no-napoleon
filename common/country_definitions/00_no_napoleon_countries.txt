@@ -105,3 +105,12 @@ DCE = {
 	cultures = { dutch }     # 처음부터 네덜란드인을 주류 문화로 고정
 	religion = protestant   # 처음부터 개신교를 국교로 고정
 }
+
+LOU = {
+	color = { 111 167 122 } # 루이지애나 늪지대와 잘 어울리는 올리브 그린 계열
+	country_type = recognized
+	tier = principality # 공국 단위 (식민지/종속국 규모)
+	cultures = { spanish } # 주문화: 프랑스인, 스페인인
+	religion = catholic
+	capital = STATE_LOUISIANA
+}
