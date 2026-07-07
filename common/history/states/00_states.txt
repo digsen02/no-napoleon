@@ -638,7 +638,7 @@ s:STATE_POMERANIA = {
 s:STATE_MISSISSIPPI = {
 		# 👑 [선생님 고증 픽] 누에바에스파냐 부왕령의 미시시피 남부 해안령 (걸프포트 & 빌록시 해안선)
 		create_state = {
-			country = c:MEX
+			country = c:CUB
 			owned_provinces = { x407000 xE41653 }
 		}
 
@@ -656,7 +656,7 @@ s:STATE_MISSISSIPPI = {
 s:STATE_ALABAMA = {
 		# 👑 [선생님 고증 픽] 누에바에스파냐 부왕령의 앨라배마 남부 해안령 (모빌 호 해안선)
 		create_state = {
-			country = c:MEX
+			country = c:CUB
 			owned_provinces = { x807000 }
 		}
 
@@ -677,7 +677,7 @@ s:STATE_ALABAMA = {
 	}
 	s:STATE_FLORIDA = {
 		create_state = {
-			country = c:MEX
+			country = c:CUB
 			owned_provinces = {
 				x4407A0 x5B1199 xED77FB xE58A3D x5CD014 x7BCB55 xC60D66 x4070C0 x3556E5 xAAF2AF xF0B481 x9088D5 xFE627B x65ECBE xC000F0 x2E5E47 x3126CA x88BDEA x31C481 xB06E20 xDAE3CC x0C1D7F x1714EE xA03000 xD0761D x23B4D0 x8C16F9 x6E31DE x976584 xE3533E
 			}

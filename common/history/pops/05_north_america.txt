@@ -797,7 +797,7 @@ s:STATE_WASHINGTON = {
 # =======================================================
 	s:STATE_MISSISSIPPI = {
 		# 👑 1. 부왕령령 빌록시 해안가 (인구 10,000명 차출)
-		region_state:MEX = {
+		region_state:CUB = {
 			# ⚜️ 프랑스-스페인계 혼혈 크레올/케이준 자유민 (딕시 전면 축출)
 			create_pop = {
 				culture = luisiano
@@ -856,7 +856,7 @@ s:STATE_WASHINGTON = {
 # =======================================================
 	s:STATE_ALABAMA = {
 		# 👑 1. 부왕령령 모빌 해안가 (인구 25,004명 차출)
-		region_state:MEX = {
+		region_state:CUB = {
 			# ⚜️ 바닐라의 '가톨릭 딕시' 16,004명을 루이지아노 케이준으로 완벽 복원!
 			create_pop = {
 				culture = luisiano
@@ -924,7 +924,7 @@ s:STATE_WASHINGTON = {
 # =======================================================
 	s:STATE_FLORIDA = {
 		# 👑 1. 부왕령 직할령 영역 (총인구: 82,996명 완벽 보존)
-		region_state:MEX = {
+		region_state:CUB = {
 			# 🏴 [선생님 픽] 플로리다의 압도적 다수를 차지하는 에스파냐 카리브 흑인 (72.2%)
 			create_pop = {
 				pop_type = slaves

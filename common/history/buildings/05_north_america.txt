@@ -1266,12 +1266,12 @@
 		}
 	}
 	s:STATE_FLORIDA={
-		region_state:MEX={
+		region_state:CUB={
 			create_building={
 				building="building_naval_fortification"
 				add_ownership={
 					country={
-						country="c:MEX"
+						country="c:CUB"
 						levels=1
 					}
 				}
