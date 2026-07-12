@@ -106,12 +106,13 @@ DCE = {
 	religion = protestant   # 처음부터 개신교를 국교로 고정
 }
 
-LOU = {
+# ⚜️ 새 태그 LSA로 완전히 분리된 루이지애나
+LSA = {
 	color = { 111 167 122 }
 	country_type = recognized
 	tier = principality
 	
-	cultures = { luisiano } # 👈 프랑스(french)를 깔끔하게 삭제!
+	cultures = { luisiano } # 프랑스를 빼버려서 찰진 문화 갈등 유도!
 	religion = catholic
 	capital = STATE_LOUISIANA
 }

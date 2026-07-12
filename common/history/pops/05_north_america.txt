@@ -26,7 +26,7 @@
 # 새로운 총인구: 368,355명 | 딕시 문화 0% 전면 축출 완료
 # =======================================================
 	s:STATE_LOUISIANA = {
-		region_state:LOU = {
+		region_state:LSA = {
 			# ⚜️ 1. 루이지아노 (기존 총인구의 50%): 뉴올리언스의 토착 크레올 지배층
 			create_pop = {
 				culture = luisiano
@@ -563,7 +563,7 @@ s:STATE_WASHINGTON = {
 		}
 	}
 	s:STATE_ARKANSAS = {
-		region_state:LOU = {
+		region_state:LSA = {
 			# ⚜️ 케이준 (미국의 압축 동화 없이 번성한 현지 프랑스계 크레올 - 인구 상향)
 			create_pop = {
 				culture = cajun
@@ -598,7 +598,7 @@ s:STATE_WASHINGTON = {
 	}
 
 	s:STATE_MISSOURI = {
-		region_state:LOU = { # 👈 USA에서 루이지애나(LOU) 관할 권역으로 변경
+		region_state:LSA = { # 👈 USA에서 루이지애나(LOU) 관할 권역으로 변경
 			# ⚜️ 주역 민족: 루이지아노 (스페인계 핵심 개척민 및 관료층)
 			create_pop = {
 				culture = luisiano
@@ -649,7 +649,7 @@ s:STATE_WASHINGTON = {
 	}
 
 	s:STATE_IOWA = {
-		region_state:LOU = { # 👈 USA에서 루이지애나(LOU) 권역으로 변경
+		region_state:LSA = { # 👈 USA에서 루이지애나(LSA) 권역으로 변경
 			# 🪶 알곤킨계 부족 (메스콰키, 사우크 등 아이오와 주역 부족 - 대폭 상향)
 			create_pop = {
 				culture = algonquian

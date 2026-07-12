@@ -43,14 +43,14 @@
 		}
 	}
 	s:STATE_LOUISIANA={
-		region_state:LOU={
+		region_state:LSA={
 			create_building={
 				building="building_trade_center"
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:LOU"
+						country="c:LSA"
 						levels=6
 						region="STATE_LOUISIANA"
 					}
@@ -61,7 +61,7 @@
 				building="building_port"
 				add_ownership={
 					country={
-						country="c:LOU"
+						country="c:LSA"
 						levels=2
 					}
 				}
@@ -73,7 +73,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:LOU"
+						country="c:LSA"
 						levels=2
 						region="STATE_LOUISIANA"
 					}
@@ -86,7 +86,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:LOU"
+						country="c:LSA"
 						levels=2
 						region="STATE_LOUISIANA"
 					}
@@ -598,13 +598,13 @@
 		}
 	}
 	s:STATE_ARKANSAS={
-		region_state:LOU={
+		region_state:LSA={
 			create_building={
 				building="building_cotton_plantation"
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:LOU"
+						country="c:LSA"
 						levels=1
 						region="STATE_ARKANSAS"
 					}
@@ -617,7 +617,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:LOU"
+						country="c:LSA"
 						levels=1
 						region="STATE_ARKANSAS"
 					}
@@ -701,7 +701,7 @@
 		}
 	}
 	s:STATE_IOWA={
-		region_state:LOU={
+		region_state:LSA={
 		}
 	}
 	s:STATE_MINNESOTA={
