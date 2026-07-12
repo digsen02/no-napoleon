@@ -17,7 +17,7 @@
 				shrewd
 			}
 		}
-
+		
 		## Interest Group leaders ##
 
 		create_character = {

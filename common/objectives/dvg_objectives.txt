@@ -1,0 +1,47 @@
+﻿
+objectives_west = {
+	enabled_background = "gfx/interface/icons/objectives/great_game_illu.dds"
+	icon = "gfx/interface/icons/objectives/hegemon.dds"
+	
+	recommended_tags = { ENG FRA SPA BRI}
+	
+	objective_subgoals = {
+	}
+		
+	on_start = {
+	}
+}
+
+
+	
+objectives_middle_europe = {
+	enabled_background = "gfx/interface/icons/objectives/hegemon_illu.dds"
+	icon = "gfx/interface/icons/objectives/great_game.dds"
+	
+	recommended_tags = { AUS PRU  }	
+	
+	objective_subgoals = {
+	}
+		
+	on_start = {
+	
+	}
+}
+objective_east&north_europe = {
+		enabled_background = "gfx/interface/icons/objectives/hegemon_illu.dds"
+	icon = "gfx/interface/icons/objectives/hegemon.dds"
+	recommended_tags = { RUS SWE }
+	objective_subgoals = { }
+}
+objectives_revolutionaries = {
+	enabled_background = "gfx/interface/icons/objectives/egalitarian_society_illu.dds"
+	icon = "gfx/interface/icons/objectives/egalitarian_society.dds"
+	
+	recommended_tags = { USA MEX }	
+	
+	objective_subgoals = {
+	}
+		
+	on_start = {
+	}
+}
