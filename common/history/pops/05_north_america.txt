@@ -26,7 +26,7 @@
 # 새로운 총인구: 368,355명 | 딕시 문화 0% 전면 축출 완료
 # =======================================================
 	s:STATE_LOUISIANA = {
-		region_state:MEX = {
+		region_state:LOU = {
 			# ⚜️ 1. 루이지아노 (기존 총인구의 50%): 뉴올리언스의 토착 크레올 지배층
 			create_pop = {
 				culture = luisiano
@@ -563,86 +563,117 @@ s:STATE_WASHINGTON = {
 		}
 	}
 	s:STATE_ARKANSAS = {
-		region_state:USA = {
+		region_state:LOU = {
+			# ⚜️ 케이준 (미국의 압축 동화 없이 번성한 현지 프랑스계 크레올 - 인구 상향)
 			create_pop = {
 				culture = cajun
 				religion = catholic
-				size = 12635
+				size = 18500
 			}
+			# 👑 루이지아노 (기존 딕시 팽창을 대체한 스페인-루이지애나 주역 개척민)
 			create_pop = {
-				culture = dixie
-				size = 33857
+				culture = luisiano
+				religion = catholic
+				size = 35000
 			}
+			# 🇪🇸 아프리카계 에스파냐인 (자유민 - 스페인 코아르타시온 관습 고증으로 소폭 증가)
 			create_pop = {
-				culture = afro_american
-				size = 303 # 141 free in 1830, 465 free in 1840
+				culture = afro_spanish
+				religion = catholic
+				size = 1500
 			}
+			# 🇪🇸 아프리카계 에스파냐인 (노예 팝 - 가톨릭화된 식민지 노예제 반영)
 			create_pop = {
 				pop_type = slaves
-				culture = afro_american
-				size = 15689
+				culture = afro_spanish
+				religion = catholic
+				size = 16000
 			}
+			# 🪶 체로키 (미국의 강제 이주를 피하고 스페인과 동맹을 맺은 원주민 - 인구 상향)
 			create_pop = {
 				culture = cherokee
-				size = 30136
+				size = 38000
 			}
 		}
 	}
+
 	s:STATE_MISSOURI = {
-		region_state:USA = {
+		region_state:LOU = { # 👈 USA에서 루이지애나(LOU) 관할 권역으로 변경
+			# ⚜️ 주역 민족: 루이지아노 (스페인계 핵심 개척민 및 관료층)
+			create_pop = {
+				culture = luisiano
+				religion = catholic
+				size = 175000
+			}
+			# ⚜️ 기존 프랑스-스페인계 케이준 주민 (상층 및 중층 현지인)
 			create_pop = {
 				culture = cajun
 				religion = catholic
-				size = 9642
+				size = 15000
 			}
+			# 🇪🇸 아프리카계 에스파냐인 (스페인 식민지 법제 하의 자유 유색인종 팝)
 			create_pop = {
-				culture = dixie
-				size = 138666
+				culture = afro_spanish
+				religion = catholic
+				size = 15000
 			}
+			# 🇪🇸 아프리카계 에스파냐인 (노예 팝 - 가톨릭을 믿는 식민지형 노예제 반영)
 			create_pop = {
-				culture = north_german
-				size = 2000
+				pop_type = slaves
+				culture = afro_spanish
+				religion = catholic
+				size = 35000
 			}
+			# 🇺🇸 양키 (국경 무역을 위해 잔류하거나 밀입국한 소수 미국인 - 대폭 축소)
 			create_pop = {
 				culture = yankee
-				size = 165204
+				size = 25000
+			}
+			# 🇺🇸 딕시 (미시시피강을 건너 불법 정착한 소수 남부인 - 대폭 축소)
+			create_pop = {
+				culture = dixie
+				size = 20000
 			}
 			create_pop = {
 				culture = dixie
 				religion = catholic
-				size = 3996
+				size = 2000
 			}
-			create_pop = {
-				culture = afro_american
-				size = 1072 # 569 free in 1830, 1574 free in 1840
-			}
-			create_pop = {
-				pop_type = slaves
-				culture = afro_american
-				size = 38928
-			}
+			# ☘️ 아일랜드계 (스페인 당국이 수용한 가톨릭 이주민 계층)
 			create_pop = {
 				culture = irish
-				size = 8000
+				religion = catholic
+				size = 6000
 			}
 		}
 	}
+
 	s:STATE_IOWA = {
-		region_state:USA = {
+		region_state:LOU = { # 👈 USA에서 루이지애나(LOU) 권역으로 변경
+			# 🪶 알곤킨계 부족 (메스콰키, 사우크 등 아이오와 주역 부족 - 대폭 상향)
 			create_pop = {
 				culture = algonquian
-				size = 12000
+				size = 28000
 			}
+			# 🪶 다코타계 부족 (수우 족 등 북부 평원의 지배자들 - 대폭 상향)
 			create_pop = {
 				culture = dakota
-				size = 8000
+				size = 18000
 			}
+			# ⚜️ 루이지아노 (최전방 요새의 스페인계 군인 및 모피 무역상 - 소수 배치)
+			create_pop = {
+				culture = luisiano
+				religion = catholic
+				size = 1500
+			}
+			# 🇺🇸 양키 (미시시피강을 몰래 건너온 사냥꾼 및 불법 정착민 - 흔적만 남김)
 			create_pop = {
 				culture = yankee
-				size = 23992
+				size = 800
 			}
 		}
 	}
+
 	s:STATE_MINNESOTA = {
 		region_state:USA = {
 			create_pop = {
