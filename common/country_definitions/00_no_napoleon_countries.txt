@@ -107,10 +107,11 @@ DCE = {
 }
 
 LOU = {
-	color = { 111 167 122 } # 루이지애나 늪지대와 잘 어울리는 올리브 그린 계열
+	color = { 111 167 122 }
 	country_type = recognized
-	tier = principality # 공국 단위 (식민지/종속국 규모)
-	cultures = { spanish } # 주문화: 프랑스인, 스페인인
+	tier = principality
+	
+	cultures = { luisiano } # 👈 프랑스(french)를 깔끔하게 삭제!
 	religion = catholic
 	capital = STATE_LOUISIANA
 }
