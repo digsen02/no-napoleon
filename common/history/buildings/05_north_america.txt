@@ -529,11 +529,11 @@
 		}
 		region_state:UTE={
 		}
-		region_state:USA={
+		region_state:LSA={
 		}
 	}
 	s:STATE_WYOMING={
-		region_state:USA={
+		region_state:LSA={
 		}
 		region_state:LKT={
 		}
@@ -541,7 +541,7 @@
 		}
 	}
 	s:STATE_MONTANA={
-		region_state:USA={
+		region_state:LSA={
 		}
 		region_state:ABS={
 		}

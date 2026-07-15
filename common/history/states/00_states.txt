@@ -322,7 +322,7 @@ s:STATE_POMERANIA = {
 			}
 		}
 		create_state = {
-			country = c:USA
+			country = c:LSA
 			owned_provinces = {
 				x742D27 xE85180 x704257 x05E33E x61CB37 x511F34 xC97B5E x88B597 xD04000
 			}
@@ -333,7 +333,7 @@ s:STATE_POMERANIA = {
 	}
 	s:STATE_WYOMING = {
 		create_state = {
-			country = c:USA
+			country = c:LSA
 			owned_provinces = {
 				x7105F8 x2CC9D7 x1F5624 x2403EF xCF073F x0EB61F x5B70BB x89656E xD7B8D9
 				x465DC8 x84DF43 x3DC80A x319B3E x0DE2A6 x93B583 x867348 x1AC89E
@@ -377,7 +377,7 @@ s:STATE_POMERANIA = {
 	}
 	s:STATE_MONTANA = {
 		create_state = {
-			country = c:USA
+			country = c:LSA
 			owned_provinces = {
 				x265A51 xB2AFD1 x3E174B x2619FF x4CD299 x7F3DF1 xEC1DF2 xD51888 x6BD915 xF17880 x2BAD69
 				x571800 x90FB3B x3AC323 xDAF79D xAD3A6B xEB65F5 xBE9808 x55C41A x7C58BC xE9D326 xDE27DA x1C7988 xEA0263 x9C13D9 xBAAB60
@@ -418,7 +418,7 @@ s:STATE_POMERANIA = {
 	}
 	s:STATE_NORTH_DAKOTA = {
 		create_state = {
-			country = c:USA
+			country = c:LSA
 			owned_provinces = {
 				x8F0750 xF3EC53 x76F55B x17983F xEE82BD x8C905E xC1C5C5 xCDE122 x20A1FA xAB458E xA4C2F6 xFAD908 x2D7D62 xAA3B6E x298347 xE24F6E x30BADD x5BED05 x184A57 xAF6E5B x198845 x96D61E xF03169 x746873 x9EA3FF x6B9ADF xA5A929 x002DE6 x3EB1F2 xF3479B x3816BA x9FB4C1 x18D7A9 xA5970F
 			}
@@ -445,7 +445,7 @@ s:STATE_POMERANIA = {
 			}
 		}
 		create_state = {
-			country = c:USA
+			country = c:LSA
 			owned_provinces = {
 				x844BD6 x0D6439 x49577A x551291
 			}
@@ -457,7 +457,7 @@ s:STATE_POMERANIA = {
 	}
 	s:STATE_NEBRASKA = {
 		create_state = {
-			country = c:USA
+			country = c:LSA
 			owned_provinces = {
 				x90C040 xD5A04C x924593 x3E62DB x76F2C5 xC0F9BB xA912ED x939662 x8E9E5A x5FA3C8
 			}
@@ -484,7 +484,7 @@ s:STATE_POMERANIA = {
 	}
 	s:STATE_KANSAS = {
 		create_state = {
-			country = c:USA
+			country = c:LSA
 			owned_provinces = {
 				x2D821B x24CC25 xCF5B71 x1B1E8B xE5842F xDA6117 x25C814 xAB5E06 x1711F0 x54AC76 x76A411 x9040C0 x876BD0 x08A728 x4A5328 x10C0C0 x0364B8 xEEC0B1 xA00FE0 x5A143B x6377BB x432B51
 				x2CA41F xDF119B x0CD9E6 x69F3E2 x0B51E5 xE80F7D xA68A21 x029975 x5D421A xB8266A xD26D2D xEB3089

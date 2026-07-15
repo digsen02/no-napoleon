@@ -370,7 +370,7 @@ s:STATE_WASHINGTON = {
 				size = 4000
 			}
 		}
-		region_state:USA = {
+		region_state:LSA = {
 			create_pop = {
 				culture = siouan
 				size = 1200
@@ -382,7 +382,7 @@ s:STATE_WASHINGTON = {
 		}
 	}
 	s:STATE_WYOMING = {
-		region_state:USA = {
+		region_state:LSA = {
 			create_pop = {
 				culture = siouan
 				size = 8000
@@ -421,7 +421,7 @@ s:STATE_WASHINGTON = {
 		}
 	}
 	s:STATE_MONTANA = {
-		region_state:USA = {
+		region_state:LSA = {
 			create_pop = {
 				culture = siouan
 				size = 5000
